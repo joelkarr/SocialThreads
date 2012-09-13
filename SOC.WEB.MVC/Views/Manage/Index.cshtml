@@ -1,0 +1,200 @@
+﻿@using SOC.Web.Admin.Helpers;
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<html><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="WT.sp" content="">
+    <meta charset="utf-8">
+    <title>Social Threads Portal</title>
+   
+    <noscript>
+    &lt;meta http-equiv="Refresh" content="0; URL=/Error/NoJS" /&gt;
+    This site uses JavaScript.
+    Your browser either does not support JavaScript, or scripts are being blocked.
+    To find out whether your browser supports JavaScript, or to allow scripts, see the browser's online help.
+    </noscript>
+
+        <script>
+            (function (global) {
+                // Begin WebTrends (properties)
+                global.gTrackEvents = 1;
+                global.gDomain = "m.webtrends.com";
+                global.gDcsId = "dcsgcos8i1000082fvehf8m5h_4y7b";
+                // End WebTrends
+            })(window);
+        </script>
+    
+<link href="/favicon.ico" rel="icon" type="image/x-icon">
+<link href="@Url.ExternalContent("ajax/jquery.ui/1.8.13/themes/cupertino/jquery-ui.css")" rel="stylesheet" type="text/css">
+<link href="@Url.StaticContent("admin/styles/site.css")" rel="stylesheet" type="text/css">
+
+
+@*<style>
+@font-face { font-family: "Segoe UI"; src: local("Segoe UI"), url(//az213233.vo.msecnd.net/Content/Fonts/segoeui.ttf); }
+@font-face { font-family: "Segoe UI Semibold"; src: local("Segoe UI Semibold"), url(//az213233.vo.msecnd.net/Content/Fonts/seguisb.ttf); }
+@font-face { font-family: "Segoe UI Light"; src: local("Segoe UI Light"), url(//az213233.vo.msecnd.net/Content/Fonts/segoeuil.ttf); }
+</style>*@
+
+</head>
+<body>
+    
+    <!--[if IE]>
+    <script>
+        if (!window.document.documentMode || window.document.documentMode < 8) {
+            window.location = "/Error/Unsupported";
+        }
+    </script>
+    <![endif]-->
+        
+@*    <form id="__AjaxAntiForgeryForm" action="#" method="post">
+        <input name="__RequestVerificationToken" type="hidden" value="Yd8tUIqG+x3Rw4tQU7fxlyhiXbistFyjd2b2F0z+CMfYnDDwTmnj0kOU12MqHfhdPRIxe4Y2cHFl/7G0Dg44AHWpkacK0tOyHpHJwaaoU6yNK8vJlq8XWR3RQr8Z4c9TeqnGjAOLqS0XeVyspem1xmxUEkEXx+qN14MUcxkT9uBboHkkKbqB7gBbL29EUrilmMFCCRkpNi9WViSVYiqIAl9jEO0Q0mNVTdJGDAAhvic=">
+    </form>*@
+
+    <div id="fxshell-wallpaper">
+        <div id="fxshell-wallpaper-b">
+        </div>
+        <div id="fxshell-wallpaper-a">
+        </div>
+    </div><div class="fxshell-drawer-screen"></div>
+    @Html.Partial("TopNavBar")
+    <div class="preview-positioner">
+        <div class="preview-content">
+            <h3>Preview Site</h3>
+            <p>Welcome to the Windows Azure preview portal. The preview portal is currently running with certain limitations and restrictions as we work out the kinks. Full functionality is available through our previous portal.</p><ul><li><a href="https://windows.azure.com/switch.aspx?v=2">Take me to the previous portal</a></li><li><a href="https://www.windowsazure.com/en-us/support/legal/preview-terms-of-use/">Read the terms of use for preview features </a></li></ul><a href="#" class="link-tail preview-content-feedback">What do you think? Give us feedback.</a>
+        </div>
+    </div>
+    @Html.Partial("Navigation")
+    <div id="aux-foreground">
+        <div id="aux-body">
+            <div id="secondary-container">
+
+            </div>
+        </div>
+        
+
+        <div id="aux-dialogs">
+
+<div id="fxshell-diagnosticDialog"></div>
+<div id="aux-yesNoDialog" class="aux-dialog aux-yesNoDialog" title="">
+    
+    <div id="aux-yesNoDialog-close" class="aux-yesNoDialog-close"></div>
+    <table id="aux-yesNoDialog-table">
+        <tbody><tr>
+            <td>
+                <div id="aux-yesNoDialogTemplate">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="aux-yesNoDialog-commandBar" class="aux-dialogCommandBar">
+                    <img id="aux-yesNoDialog-yesButton" class="aux-dialogButton" src="//az213233.vo.msecnd.net/Content/Images/Tick.png" alt="Yes">
+                    <img id="aux-yesNoDialog-noButton" class="aux-dialogButton" src="//az213233.vo.msecnd.net/Content/Images/Cross.png" alt="No">
+                </div>
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+<div id="aux-messageDialog" class="aux-messageDialog" title="">
+    <div id="aux-messageDialog-inner" class="aux-messageDialog-inner">
+        <div id="aux-messageDialog-body" class="aux-messageDialog-body">
+            <div id="aux-messageDialog-close" class="aux-messageDialog-close"></div>
+            <div id="aux-messageDialog-context" class="aux-messageDialog-context"></div>
+            <div id="aux-messageDialog-title" class="aux-messageDialog-title"></div>
+            <div id="aux-messageDialog-content" class="aux-messageDialog-content"></div>
+        </div>
+        <div id="aux-messageDialog-commandBar" class="aux-messageDialog-commandBar">
+            <div id="aux-messageDialog-okButton" class="aux-dialogButton">
+                Close <img src="//az213233.vo.msecnd.net/Content/Images/Tick.png" alt="Close">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    <div class="fxshell-drawer-screeninner" style="z-index: 1001; "></div></div>
+    <div id="fxshell-tabspinner" style="display: none; ">
+    </div>
+@Html.Partial("BottomPanel")
+
+    
+
+    
+
+<script type="text/javascript">
+    window.environment = { "accountUrl": "https:\/\/account.windowsazure.com\/Subscriptions", "applicationRoot": "https:\/\/manage.windowsazure.com", "betaFeatures": [{ "extensionName": "VirtualMachineExtension", "featureName": "virtualmachines" }, { "extensionName": "WebsiteExtension", "featureName": "websites" }, { "extensionName": "NetworkExtension", "featureName": "virtualmachines" }, { "extensionName": "MediaServicesExtension", "featureName": "mediaservices" }, { "extensionName": "MobileServicesExtension", "featureName": "mobileservices"}], "betaSignUpUrl": "http:\/\/go.microsoft.com\/fwlink\/?LinkID=253769&CLCID=0x409", "branding": "Windows Azure", "developmentMode": false, "enableHelpDrawer": true, "feedbackLink": "mailto:azureportalfeedback@microsoft.com?body=Include the following details:%0A 1. Brief description of what you were trying to do: %0A 2. Screenshot <if applicable>: %0A%0A If you are reporting an issue also include: %0A  1. Subscription ID: %0A 2. Deployment ID<if applicable>:  %0A 3. The error message that you received:", "isAdminMode": false, "isOnPremMode": false, "isTelemetryEventDisabled": [false, false, false, false, false, false, false, false, false, false, false, true, false, false], "navigationLinks": [{ "label": "Home", "selected": false, "url": "https:\/\/go.microsoft.com\/fwlink\/p\/?linkid=232466&CLCID=0x409" }, { "label": "Pricing", "selected": false, "url": "https:\/\/go.microsoft.com\/fwlink\/p\/?linkid=232467&CLCID=0x409" }, { "label": "Develop", "selected": false, "url": "https:\/\/go.microsoft.com\/fwlink\/p\/?linkid=232468&CLCID=0x409" }, { "label": "Manage", "selected": false, "url": "https:\/\/go.microsoft.com\/fwlink\/?LinkId=254708&CLCID=0x409" }, { "label": "Community", "selected": false, "url": "https:\/\/go.microsoft.com\/fwlink\/p\/?linkid=232469&CLCID=0x409" }, { "label": "Support", "selected": false, "url": "https:\/\/go.microsoft.com\/fwlink\/p\/?linkid=232470&CLCID=0x409" }, { "label": "Account", "selected": false, "url": "https:\/\/account.windowsazure.com\/Subscriptions" }, { "label": "Portal", "selected": true, "url": "#"}], "pageRequestId": "c95b3b9f-a342-4fe5-9461-15a887622f43", "portalVersion": "6.0.6002.18488 (rd_auxportal_stable.120726-1619)", "productionPortalUrl": "https:\/\/windows.azure.com\/switch.aspx?v=2", "signOutLink": "https:\/\/login.live.com\/logout.srf?ct=1345153796&rver=6.1.6206.0&lc=1033&id=286955&ru=https:%2F%2Fmanage.windowsazure.com%2F", "staticContentRootUrl": "\/\/az213233.vo.msecnd.net", "userEmailAddress": "socialthreads@live.com", "userFirstName": "Joel" };
+</script>
+
+<script src="@Url.ExternalContent("/ajax/jQuery/jquery-1.7.1.min.js")"></script>
+<script src="@Url.ExternalContent("/ajax/jquery.ui/1.8.18/jquery-ui.min.js")"></script>
+
+
+@*<script src="//az213233.vo.msecnd.net/Content/Minify/D9664A5D6C4B6427426A38E6E479BD90_Core.js"></script>
+
+
+<script src="//az213233.vo.msecnd.net/Content/Minify/472AC308FAAC9CA0A4F7EC90070CD9BC_Extensions.js"></script>
+
+
+<script src="//az213233.vo.msecnd.net/Content/Minify/196E8F5105DDE2E20A5308AAB7C10F6B_Templates.js"></script>*@
+
+
+
+<script type="text/javascript">
+    function trace(s) { }
+    function traceObject(obj) { }
+</script>
+
+
+@*    <script>
+        (function (global, undefined) {
+            "use strict";
+
+            var $ = global.jQuery,
+                fx = global.fx,
+                shell = global.Shell,
+                allExtension = global.AllExtension;
+
+            if (!$ || !fx || !shell || !allExtension) {
+                global.location.href = "/Error/NotLoaded";
+                return;
+            }
+
+            shell.UI.Spinner.show();
+
+            function initialize() {
+                var exp = global.Exp,
+                    dataSet = { "namePropertyName": "id", "displayNamePropertyName": "displayName", "collectionNamePropertyName": "data", "pollingInterval": 45000, "fastPollingInterval": 10000, "slowPollingInterval": 300000, "data": { "subscriptions": [{ "id": "e7a1225d-9ce0-495c-84d8-36e9c2d4256e", "locations": [{ "Name": "West US", "DisplayName": "West US", "AvailableServices": ["Compute", "Storage", "PersistentVMRole"], "ExtensionData": {} }, { "Name": "East US", "DisplayName": "East US", "AvailableServices": ["Compute", "Storage", "PersistentVMRole"], "ExtensionData": {} }, { "Name": "East Asia", "DisplayName": "East Asia", "AvailableServices": ["Compute", "Storage", "PersistentVMRole"], "ExtensionData": {} }, { "Name": "Southeast Asia", "DisplayName": "Southeast Asia", "AvailableServices": ["Compute", "Storage", "PersistentVMRole"], "ExtensionData": {} }, { "Name": "North Europe", "DisplayName": "North Europe", "AvailableServices": ["Compute", "Storage", "PersistentVMRole"], "ExtensionData": {} }, { "Name": "West Europe", "DisplayName": "West Europe", "AvailableServices": ["Compute", "Storage", "PersistentVMRole"], "ExtensionData": {}}], "affinityGroups": [], "SubscriptionID": "e7a1225d-9ce0-495c-84d8-36e9c2d4256e", "SubscriptionName": "Windows Azure MSDN - Visual Studio Ultimate", "SubscriptionStatus": "Active", "AccountAdminLiveEmailId": "socialthreads@live.com", "ServiceAdminLiveEmailId": "socialthreads@live.com", "MaxCoreCount": 20, "MaxStorageAccounts": 20, "MaxHostedServices": 20, "CurrentCoreCount": 2, "CurrentHostedServices": 1, "CurrentStorageAccounts": 1, "Services": null, "Applications": null, "IsComplete": false, "Features": [{ "Name": "mediaservices", "FriendlyName": "Windows Azure Media Services", "Description": "Windows Azure Media Services enable solution providers and content owners to build end-to-end workflows for the creation, management, and distribution of media.", "Status": "Available", "ExtensionData": {} }, { "Name": "mobileservices", "FriendlyName": "Windows Azure Mobile Services", "Description": "Get started with a mobile app in minutes and build a highly scalable and secure backend with object storage, optional app logic and push notifications. Get started for free and scale as you go on a cloud platform that enables automatic scale-out options through reserved instances for greater isolation and performance. The preview currently supports Windows 8 clients.", "Status": "Available", "ExtensionData": {} }, { "Name": "VirtualMachineRole", "FriendlyName": "VM Role", "Description": "The VM Role Beta Program includes a new Windows Azure role that allows you to upload a custom virtual hard disk image of a Windows Server 2008 R2 virtual machine and run it in Windows Azure.  By checking the box to opt-in to the VM Role Beta program, you accept the [[http://go.microsoft.com/fwlink/?LinkID=206791&clcid=0x409|license terms]] for your use of the Windows Server 2008 R2 software in the VM Role Beta Program.", "Status": "Available", "ExtensionData": {} }, { "Name": "virtualmachines", "FriendlyName": "Windows Azure Virtual Machines", "Description": "Instantly run your existing applications in the cloud using Windows Azure Virtual Machines. Virtual Machines allow you to easily move your applications and infrastructure to the cloud without requiring any changes to the existing code. You can bring your own Windows Server or Linux images or select from a gallery. Regardless of your choice, you retain full control to configure and maintain the image.", "Status": "Available", "ExtensionData": {} }, { "Name": "websites", "FriendlyName": "Windows Azure Web Sites", "Description": "Quickly and easily deploy sites to a highly scalable cloud environment with the frameworks and open source apps of your choice using Windows Azure Web Sites. Get started for free and scale as you go on a cloud platform that enables automatic scale-out options across shared and reserved instances for greater isolation and performance.", "Status": "Available", "ExtensionData": {}}], "ExtensionData": {}}], "environmentSettings": { "HostedServiceDnsSuffix": "cloudapp.net", "AntaresHostedSiteUriFormat": "{0}.azurewebsites.net", "MaxClearDatabasesAllowed": 1 }, "locations": [{ "id": "West US", "name": "West US", "displayName": "West US", "type": "Location", "supportedSubscriptionIds": ["e7a1225d-9ce0-495c-84d8-36e9c2d4256e"], "availableServices": ["Compute", "Storage", "PersistentVMRole"] }, { "id": "East US", "name": "East US", "displayName": "East US", "type": "Location", "supportedSubscriptionIds": ["e7a1225d-9ce0-495c-84d8-36e9c2d4256e"], "availableServices": ["Compute", "Storage", "PersistentVMRole"] }, { "id": "East Asia", "name": "East Asia", "displayName": "East Asia", "type": "Location", "supportedSubscriptionIds": ["e7a1225d-9ce0-495c-84d8-36e9c2d4256e"], "availableServices": ["Compute", "Storage", "PersistentVMRole"] }, { "id": "Southeast Asia", "name": "Southeast Asia", "displayName": "Southeast Asia", "type": "Location", "supportedSubscriptionIds": ["e7a1225d-9ce0-495c-84d8-36e9c2d4256e"], "availableServices": ["Compute", "Storage", "PersistentVMRole"] }, { "id": "North Europe", "name": "North Europe", "displayName": "North Europe", "type": "Location", "supportedSubscriptionIds": ["e7a1225d-9ce0-495c-84d8-36e9c2d4256e"], "availableServices": ["Compute", "Storage", "PersistentVMRole"] }, { "id": "West Europe", "name": "West Europe", "displayName": "West Europe", "type": "Location", "supportedSubscriptionIds": ["e7a1225d-9ce0-495c-84d8-36e9c2d4256e"], "availableServices": ["Compute", "Storage", "PersistentVMRole"]}], "affinityGroups": [] }, "eTag": "397596F0EFA5FDEF4D8BFEBA72218A1C", "mergeMethod": "Cascade" };
+                shell.Internal.initialize();
+
+                exp.internal.rdfe.initialize(dataSet, function () {
+                    shell.Internal.start(function () {
+                        var telemetry = shell.Diagnostics.Telemetry;
+
+                        telemetry.timerStart("cdm.initialize.requestAllDataSets");
+                        exp.Data.internal.requestAllDataSets(function () {
+                            telemetry.timerStopAndLog("cdm.initialize.requestAllDataSets", "Initial data fetch:");
+                        });
+
+                        exp.GettingStarted.determine().done(
+                            function () {
+                                global.cdm.navigateTo(global.location.hash);
+                            });
+                        shell.UI.Spinner.hide();
+                    });
+                });
+            }
+
+            shell.Configuration.initialize().then(
+                function (result) {
+                    initialize();
+                },
+                function (error) {
+                    initialize();
+                });
+        })(this);
+    </script>*@
+
+
+
+<div class="fx-dialogpresenter-shield"></div><div class="fx-dialogpresenter"></div></body></html>

@@ -1,0 +1,66 @@
+﻿@using System.Web.Mvc.Html
+@model SOC.Web.Models.ViewModels.Order.FormViewModel
+@{
+    ViewBag.Title = "Form";
+}
+
+<div class="form_title">
+    <h1 class="title">@Model.Order.Title.ToUpper()</h1>
+    <h3 class="subtitle">Due: @String.Format("{0:dddd, MMMM d, yyyy}", @Model.Order.Deadline)</h3>  
+</div>
+
+
+@foreach (var product in Model.Order.Products)
+{
+    @Html.Partial("Partial/Product", product);
+}
+
+
+@section ScriptSection{
+    
+<script type="text/javascript">
+    // Initialized the namespace
+    var KnockoutOrderForm = {};
+
+    // View model declaration
+    KnockoutOrderForm.initViewModel = function (item) {
+        var itemViewModel = {
+            sku: ko.observable("testsku"),
+            name: ko.observable("test title"),
+            quantity: ko.observable(2),
+            availableSizes: ["Small", "Medium", "Large", "X-Large"],
+            size: ko.observable("Small"),
+            price: ko.observable("19.90")
+
+        };
+        return itemViewModel;
+    }
+
+    // Bind the item
+    KnockoutOrderForm.bindData = function (item) {
+        // Create the view model
+        var viewModel = KnockoutOrderForm.initViewModel(item);
+
+        ko.applyBindings(viewModel);
+    }
+
+    KnockoutOrderForm.additem = function () {
+        $.ajax({
+            url: "/Cart/Add/",
+            type: 'post',
+            data: ko.toJSON(this),
+            contentType: 'application/json',
+            success: function (result) {
+
+                $('#cart').html(result);
+            }
+        });
+    }
+
+
+    $(document).ready(function () {
+        KnockoutOrderForm.bindData();
+
+    });
+</script>
+}

@@ -1,0 +1,5936 @@
+﻿/*----------------------------------------------------------
+The base color for this template is #5c87b2. If you'd like
+to use a different color start by replacing all instances of
+#5c87b2 with your new color.
+----------------------------------------------------------*/
+body {
+    background-color: #5c87b2;
+    font-size: .85em;
+    font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    color: #696969;
+}
+
+a:link {
+    color: #034af3;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #505abc;
+}
+
+a:hover {
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active {
+    color: #12eb87;
+}
+
+p, ul {
+    margin-bottom: 20px;
+    line-height: 1.6em;
+}
+
+header,
+footer,
+nav,
+section {
+    display: block;
+}
+
+/* HEADINGS   
+----------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5em;
+    color: #000;
+}
+
+h1 {
+    font-size: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    padding: 0 0 10px 0;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+h5, h6 {
+    font-size: 1em;
+}
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+/* you can specify a greater or lesser percentage for the 
+page width. Or, you can specify an exact pixel width. */
+.page {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header, #header {
+    position: relative;
+    margin-bottom: 0px;
+    color: #000;
+    padding: 0;
+}
+
+header h1, #header h1 {
+    font-weight: bold;
+    padding: 5px 0;
+    margin: 0;
+    color: #fff;
+    border: none;
+    line-height: 2em;
+    font-size: 32px !important;
+    text-shadow: 1px 1px 2px #111;
+}
+
+#main {
+    padding: 30px 30px 15px 30px;
+    background-color: #fff;
+    border-radius: 4px 0 0 0;
+    -webkit-border-radius: 4px 0 0 0;
+    -moz-border-radius: 4px 0 0 0;
+}
+
+footer, 
+#footer {
+    background-color: #fff;
+    color: #999;
+    padding: 10px 0;
+    text-align: center;
+    line-height: normal;
+    margin: 0 0 30px 0;
+    font-size: .9em;
+    border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+}
+
+/* TAB MENU   
+----------------------------------------------------------*/
+ul#menu {
+    border-bottom: 1px #5C87B2 solid;
+    padding: 0 0 2px;
+    position: relative;
+    margin: 0;
+    text-align: right;
+}
+
+ul#menu li {
+    display: inline;
+    list-style: none;
+}
+
+ul#menu li#greeting {
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2.8em;
+    color: #fff;
+}
+
+ul#menu li a {
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2.8em;
+    background-color: #e8eef4;
+    color: #034af3;
+    border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+}
+
+ul#menu li a:hover {
+    background-color: #fff;
+    text-decoration: none;
+}
+
+ul#menu li a:active {
+    background-color: #a6e2a6;
+    text-decoration: none;
+}
+
+ul#menu li.selected a {
+    background-color: #fff;
+    color: #000;
+}
+
+/* FORM LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea {
+    min-height: 75px;
+}
+
+input[type="text"], 
+input[type="password"] {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.2em;
+    color: #444;
+    width: 200px;
+}
+
+select {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.2em;
+    color: #444;
+}
+
+input[type="submit"] {
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+/* TABLE
+----------------------------------------------------------*/
+
+table {
+    border: solid 1px #e8eef4;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 5px;
+    border: solid 1px #e8eef4;
+}
+
+table th {
+    padding: 6px 5px;
+    text-align: left;
+    background-color: #e8eef4;
+    border: solid 1px #e8eef4;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+.clear {
+    clear: both;
+}
+
+.error {
+    color: Red;
+}
+
+nav, 
+#menucontainer {
+    margin-top: 40px;
+}
+
+div#title {
+    display: block;
+    float: left;
+    text-align: left;
+}
+
+#logindisplay {
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    margin: 10px;
+    color: White;
+}
+
+#logindisplay a:link {
+    color: white;
+    text-decoration: underline;
+}
+
+#logindisplay a:visited {
+    color: white;
+    text-decoration: underline;
+}
+
+#logindisplay a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #ff0000;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+/* Styles for editor and display helpers
+----------------------------------------------------------*/
+.display-label, 
+.editor-label {
+    margin: 1em 0 0 0;
+}
+
+.display-field, 
+.editor-field {
+    margin: 0.5em 0 0 0;
+}
+
+.text-box {
+    width: 30em;
+}
+
+.text-box.multi-line {
+    height: 6.5em;
+}
+
+.tri-state {
+    width: 6em;
+}
+
+
+.error-container {
+    background-color: #8cc7e5;
+    width: 850px;
+    padding: 15px;
+    font-family: "Segoe UI Light", sans-serif;
+    margin: 50px auto;
+}
+.error-body {
+    background-color: #565551;
+    color: #fff;
+    padding-bottom: 40px;
+}
+.error-body .header .error .code, .error-body .header .error .message {
+    display: inline-block;
+}
+.error-body .header .error {
+    border-bottom: 1px solid #fff;
+    margin: 0 30px 20px 30px;
+    padding: 20px 0 15px 0;
+    text-align: center;
+}
+.error-body .header .error .code {
+    font-size: 72pt;
+    color: #8cc7e5;
+    text-align: right;
+    margin-right: 25px;
+}
+.error-body.no-code .header .error .code {
+    display: none;
+}
+.error-body .header .error .message {
+    font-family: "Segoe UI Light", sans-serif;
+    font-size: 44pt;
+    text-align: left;
+}
+.error-body .more-details .error-info {
+    overflow: auto;
+}
+.error-body .more-details ul.links {
+    text-align: right;
+    float: left;
+    width: 33%}
+.error-body .more-details ul.links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 13px;
+    text-transform: uppercase;
+    font-family: "Segoe UI Bold", sans-serif;
+    font-size: 12pt;
+}
+.error-body .more-details ul.links li {
+    margin-bottom: 10px;
+}
+.error-body .more-details ul.links li a {
+    text-decoration: none;
+    color: #fff;
+    background: transparent url(//az213233.vo.msecnd.net/Content/Images/icon-layout-arrow-link-20-w.png) center right no-repeat;
+    padding: 7px 27px 6px 7px;
+}
+.error-body .more-details .more-info {
+    float: left;
+    width: 66%;
+    margin: 0;
+    font-family: "Segoe UI Light", sans-serif;
+}
+.error-body .more-details .more-info div {
+    padding: 0 35px 0 35px;
+    word-wrap: break-word;
+}
+.error-body .more-details .summary {
+    font-size: 24pt;
+}
+.error-body .more-details .details {
+    font-size: 16pt;
+    margin-top: 10px;
+}
+.ui-widget {
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    font-size: 12px;
+}
+.ui-widget-content, .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background-image: none;
+}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+ul, select, input {
+    padding: 0;
+    margin: 0;
+}
+dl, dd {
+    margin: 0;
+}
+body {
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    font-size: 12px;
+    margin: 0;
+    border: 0;
+    height: 100%;
+    max-height: 100%;
+    background: #666;
+    color: #323232;
+    background: #000;
+    overflow-y: scroll;
+}
+a {
+    color: #2086bf;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+img {
+    border: 0;
+}
+h1 {
+    font-family: "Segoe UI Light", Verdana, Helvetica, Sans-Serif;
+    font-weight: normal;
+    font-size: 1.25em;
+}
+h2 {
+    font-family: "Segoe UI Light", Verdana, Helvetica, Sans-Serif;
+    font-weight: normal;
+    font-size: 1.15em;
+}
+h3 {
+    font-family: "Segoe UI Light", Verdana, Helvetica, Sans-Serif;
+    font-weight: normal;
+    font-size: 1em;
+}
+#aux-foreground {
+    position: absolute;
+    min-height: 100%;
+    left: 50%;
+    width: 960px;
+    margin-left: -480px;
+    background: #fff;
+    box-shadow: 0 0 85px rgba(0, 0, 0, .3);
+}
+#aux-body {
+    margin-left: 200px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    padding: 30px;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.aux-customError>h2 {
+    background: url(//az213233.vo.msecnd.net/Content/Images/heart-broken.png) no-repeat scroll 0 50% transparent;
+    font-size: 22px;
+    font-weight: lighter;
+    line-height: 35px;
+    margin-left: 220px;
+    margin-top: 90px;
+    min-height: 71px;
+    padding: 30px 0 0 102px;
+    vertical-align: middle;
+}
+.aux-welcome {
+    position: absolute;
+    top: 30px;
+    bottom: 57px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    overflow: auto;
+}
+.aux-welcome-logon {
+    background-color: #f8faff;
+}
+.aux-welcomeContent {
+    padding: 20px 40px;
+    height: 400px;
+    background-color: #fff;
+}
+.aux-highlights {
+    border-top: 2px solid #e5e6e9;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.aux-trademark {
+    border-top: 2px solid #e5e6e9;
+    background-color: #fff;
+    height: 35px;
+    padding-top: 20px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+.aux-welcomeContent>ul {
+    list-style-type: none;
+}
+ul.aux-signupOrLogin>li {
+    float: left;
+    margin-left: 30px;
+}
+ul.aux-signupOrLogin>li:first-child {
+    background-image: url(//az213233.vo.msecnd.net/Content/Images/signinBG.png);
+    width: 475px;
+    height: 400px;
+    margin-left: 0;
+}
+.aux-signupOrLogin li.login {
+    vertical-align: top;
+}
+.aux-signupOrLogin li.login h1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.aux-signupOrLogin li.signup .signup-moto {
+    margin: 310px 50px 50px 175px;
+    font-size: 18px;
+    font-weight: 100;
+    color: #fff;
+}
+.aux-signupOrLogin li.signup .signup-moto>p {
+    margin: 0 10px 0 0;
+}
+.aux-signupOrLogin li.signup .signup-moto a.signup-link {
+    text-transform: lowercase;
+    font-size: 30px;
+    text-decoration: none;
+    background: transparent url(//az213233.vo.msecnd.net/Content/Images/btn_arrow-default.png) no-repeat right center;
+    padding: 0 45px 7px 0;
+    color: #fff;
+    float: right;
+}
+.aux-signupOrLogin li.signup .signup-moto>a.signup-link:hover {
+    background: transparent url(//az213233.vo.msecnd.net/Content/Images/btn_arrow-hover.png) no-repeat right center;
+    color: #87d5f7;
+}
+.aux-signupOrLogin li.login ul.signin-form {
+    color: #696969;
+    list-style-type: none;
+    margin-left: 20px;
+}
+.aux-signupOrLogin li.login ul.signin-form>li {
+    padding: 3px 0;
+}
+.aux-signupOrLogin li.login ul.signin-form>li.signin-button {
+    text-align: right;
+}
+.aux-signupOrLogin li.login ul.signin-form input[type=text], .aux-signupOrLogin li.login ul.signin-form input[type=password] {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.2em;
+    color: #444;
+    width: 300px;
+    height: 25px;
+}
+.aux-signupOrLogin li.login ul.signin-form input[type=submit] {
+    color: #fff;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px 10px;
+    text-transform: lowercase;
+    width: 170px;
+    border: 1px solid #fff;
+    background: #8dbb40 url(//az213233.vo.msecnd.net/Content/Images/btn_arrow-default.png) no-repeat 95% center;
+}
+.aux-signupOrLogin li.login .validation-summary-errors {
+    color: red;
+    margin: 10px 0 0 20px;
+    position: absolute;
+}
+.aux-signupOrLogin li.login .validation-summary-errors>ul {
+    margin: 10px 0 10px 30px;
+}
+.aux-highlights>ul {
+    list-style-type: none;
+}
+.aux-highlights>ul>li {
+    float: left;
+    margin-left: 30px;
+    width: 326px;
+}
+.aux-highlights>ul>li.last-child {
+    margin-right: 30px;
+}
+.aux-highlight>div>h2 {
+    color: #076bb6;
+    font-size: 1.75em;
+    font-weight: bold;
+    margin: 15px 0 10px 0;
+}
+.aux-highlight>div>p {
+    text-align: justify;
+    font-size: 1.15em;
+    margin: 0;
+}
+.aux-signupContent {
+    padding-left: 35px;
+}
+.aux-signupContent h1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.aux-signupContent .aux-customerSignup {
+    color: #696969;
+    list-style-type: none;
+    width: 900px;
+}
+.aux-signupContent ul.aux-customerSignup>li {
+    float: left;
+}
+.aux-signupContent .aux-signupHighlights {
+    width: 400px;
+}
+.aux-signupContent .aux-hostingPlan {
+    padding: 0 0 15px 0;
+}
+.aux-signupContent .aux-hostingPlan>ul {
+    list-style-type: none;
+}
+.aux-signupContent .aux-hostingPlan>ul>li {
+    padding: 3px 0;
+}
+.aux-signupContent .aux-hostingPlan select {
+    border: 1px solid #eee;
+    width: 285px;
+    height: 25px;
+}
+.aux-signupContent .aux-planFeatures {
+}
+.aux-signupContent li.aux-signupForm {
+    padding-left: 76px;
+    border-left: 2px solid #eee;
+}
+.aux-signupContent li.aux-signupForm>ul {
+    list-style-type: none;
+}
+.aux-signupContent li.aux-signupForm>ul>li {
+    padding: 3px 0;
+}
+.aux-signupContent li.aux-signupForm>ul>li>input[type=text], .aux-signupContent li.aux-signupForm>ul>li>input[type=password] {
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.2em;
+    color: #444;
+    width: 300px;
+    height: 25px;
+}
+.aux-signupContent li.aux-signupForm>ul>li.last-child {
+    padding: 20px 0 0 0;
+    text-align: right;
+}
+.aux-signupContent li.aux-signupForm>ul>li>input[type=submit] {
+    color: #fff;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px 10px;
+    text-transform: lowercase;
+    width: 170px;
+    border: 1px solid #fff;
+    background: #8dbb40 url(//az213233.vo.msecnd.net/Content/Images/btn_arrow-default.png) no-repeat 95% center;
+}
+.aux-signupContent .aux-planFeatures>dl {
+    font-size: 1.15em;
+}
+.aux-signupContent .aux-planFeatures>dl>dt {
+    width: 200px;
+    float: left;
+    padding: 0 0 5px 26px;
+    background: transparent url(//az213233.vo.msecnd.net/Content/Images/icon-help.gif) no-repeat;
+}
+.aux-signupContent .aux-planFeatures>dl>dd {
+    padding: 0 0 5px 0;
+    vertical-align: middle;
+}
+.aux-signupContent .aux-customerSignup .validation-summary-errors {
+    color: red;
+    position: absolute;
+    margin-top: 20px;
+}
+.aux-signupContent .aux-customerSignup .validation-summary-errors>ul {
+    margin: 10px 0 0 30px;
+}
+.arrowlink {
+    background: transparent url(//az213233.vo.msecnd.net/Content/Images/icon-next-20-g-idl.png) no-repeat right 50%;
+    font-family: "Segoe UI Semibold";
+    color: #929397;
+    text-transform: uppercase;
+    padding: 3px 27px 2px 0;
+}
+.arrowlink:hover {
+    background: transparent url(//az213233.vo.msecnd.net/Content/Images/icon-next-20-g-hvr.png) no-repeat right 50%;
+    text-decoration: none;
+    color: #509ed8;
+}
+#fxshell-navpane {
+    z-index: 1;
+    position: fixed;
+    top: 30px;
+    bottom: 60px;
+    left: 50%;
+    margin-left: -480px;
+    width: 199px;
+    overflow: hidden;
+}
+#fxshell-nav1 {
+    position: absolute;
+    width: 199px;
+    top: 0;
+    bottom: 0;
+    border-right: 1px solid #cecece;
+    background-color: #71b1d1;
+}
+#fxshell-nav1-scroll {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.fxshell-nav1-hidden {
+    display: none;
+}
+.fxshell-nav1-item {
+    position: relative;
+    height: 50px;
+    background-position: 20px center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+}
+.fxshell-nav1-item:first-child {
+    margin-top: 30px;
+}
+.fxshell-nav1-item:last-child {
+    margin-bottom: 30px;
+}
+.fxshell-nav1-item:hover {
+    background-color: #7cc1de;
+    border-bottom: 1px solid #71b1d1;
+}
+.fxshell-nav1-item.selected:hover {
+    background-color: #fff;
+}
+.fxshell-nav1-item.selected {
+    background-color: #fff;
+    border-top: 1px solid #6190aa;
+    border-bottom: 1px solid #b8d8e8;
+}
+.fxshell-nav1-icon {
+    position: absolute;
+    left: 13px;
+    width: 40px;
+    top: 6px;
+    height: 39px;
+    background-position: -39px 0;
+    transition: opacity .3s ease-in-out .3s, left@navspeed ease-in-out 0;
+    -moz-transition: opacity .3s ease-in-out .3s, left@navspeed ease-in-out 0;
+    -webkit-transition: opacity .3s ease-in-out .3s, left@navspeed ease-in-out 0;
+    -o-transition: opacity .3s ease-in-out .3s, left@navspeed ease-in-out 0;
+}
+.fxshell-nav1-count {
+    display: none;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    opacity: 0;
+    position: absolute;
+    top: 27px;
+    left: 61px;
+    width: 40px;
+    text-align: left;
+    color: #c9dfe9;
+    font-weight: inherit;
+    transition: opacity .3s ease-in-out .3s;
+    -moz-transition: opacity .3s ease-in-out .3s;
+    -webkit-transition: opacity .3s ease-in-out .3s;
+    -o-transition: opacity .3s ease-in-out .3s;
+}
+.fxshell-nav1-label {
+    position: absolute;
+    top: 12px;
+    left: 60px;
+    right: 0;
+    overflow: hidden;
+    font: bold 11px/11px "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #fff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: opacity .3s ease-in-out 0;
+    -moz-transition: opacity .3s ease-in-out 0;
+    -webkit-transition: opacity .3s ease-in-out 0;
+    -o-transition: opacity .3s ease-in-out 0;
+}
+.fxshell-nav1-item.selected .fxshell-nav1-label, .fxshell-nav1-item.selected .fxshell-nav1-count {
+    color: #323232;
+}
+.fxshell-nav1-dots {
+    position: absolute;
+    left: 60px;
+    top: 10px;
+}
+.fxshell-nav1-dot1, .fxshell-nav1-dot2, .fxshell-nav1-dot3 {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    opacity: 0;
+    position: absolute;
+    top: 14px;
+    height: 2px;
+    width: 2px;
+    top: 14px;
+    height: 3px;
+    width: 3px;
+    background: #fff;
+}
+.fxshell-nav1-dot1 {
+    left: 0;
+}
+.fxshell-nav1-dot2 {
+    left: 5px;
+}
+.fxshell-nav1-dot3 {
+    left: 10px;
+}
+.fxshell-nav1-item[data-state="notavailable"] {
+    display: none;
+}
+.fxshell-nav1-item[ms-azure-extension="All"] .fxshell-nav1-label {
+    white-space: normal;
+    width: 100px;
+}
+.fxshell-nav1-item[data-state="loading"] .fxshell-nav1-icon {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    opacity: .6;
+}
+.fxshell-nav1-item[data-state="loading"] .fxshell-nav1-label {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    opacity: 0;
+}
+.fxshell-nav1-item[data-state="2digit"] .fxshell-nav1-count {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(enabled=false)";
+    opacity: 1;
+    font: 11px/12px "Segoe UI"}
+.fxshell-nav1-item[data-state="3digit"] .fxshell-nav1-count {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(enabled=false)";
+    opacity: 1;
+    font: 11px/12px "Segoe UI"}
+.fxshell-nav1-item.selected .fxshell-nav1-icon {
+    background-position: 0 0;
+}
+.fxshell-nav1-errortext {
+    display: none;
+    position: absolute;
+    top: 28px;
+    left: 75px;
+    font: bold 11px/11px "Segoe UI Semibold", Verdana, Helvetica, Sans-Serif;
+    color: red;
+    text-transform: uppercase;
+}
+.fxshell-nav1-erroricon {
+    display: none;
+    position: absolute;
+    top: 26px;
+    left: 57px;
+}
+.fxshell-nav1-item[data-state="error"] .fxshell-nav1-erroricon, .fxshell-nav1-item[data-state="error"] .fxshell-nav1-errortext {
+    display: block;
+}
+.fxshell-nav1-count[data-showcount="true"] {
+    display: block;
+}
+#fxshell-nav2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 200px;
+    width: 199px;
+    background: #71b1d1;
+}
+#fxshell-nav2-back {
+    display: block;
+    height: 69px;
+    width: 181px;
+    padding: 7px 0 0 18px;
+    font-size: 18px;
+    line-height: 69px;
+    white-space: nowrap;
+    text-transform: lowercase;
+    text-decoration: none;
+    color: #fff;
+    background: #71b1d1;
+}
+#fxshell-nav2-back:hover {
+    background-color: #7cc1de;
+}
+#fxshell-nav2-back img {
+    padding-right: 6px;
+    position: relative;
+    top: 7px;
+}
+#fxshell-nav2-scroll {
+    position: absolute;
+    top: 75px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#fxshell-nav2-items {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.fxshell-nav2-item {
+    cursor: pointer;
+    width: 164px;
+    padding: 0 17px 0 20px;
+    font-size: 0;
+    border-top: 1px solid #80bfdd;
+    border-bottom: 1px solid transparent;
+}
+.fxshell-nav2-item:first-child {
+    border-top: none;
+}
+.fxshell-nav2-item:hover {
+    background-color: #7cc1de;
+    border-bottom: 1px solid #71b1d1;
+}
+.fxshell-nav2-item span {
+    width: 164px;
+    font-size: 12px;
+    line-height: 29px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    color: #fff;
+}
+.fxshell-nav2-item.selected span {
+    color: #323232;
+}
+.fxshell-nav2-item.selected {
+    border-top: 1px solid #6190aa;
+    border-bottom: 1px solid #b8d8e8;
+    background-color: #fff;
+}
+.aux-glanceLabel {
+    margin: .5em 0 0 0;
+    padding: 10px 0 0 20px;
+    text-transform: uppercase;
+    font-family: "Segoe UI Semibold", Verdana, Helvetica, Sans-Serif;
+    font-size: 11px;
+}
+.aux-glanceValue {
+    color: #000;
+    margin: 0;
+    padding: .25em 0 15px 20px;
+    font-family: "Segoe UI", Arial;
+    font-size: 14px;
+}
+.ui-widget-overlay {
+    background-image: none;
+    background-color: #000;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    opacity: 0;
+    overflow: hidden;
+}
+.aux-devTools {
+    display: none;
+}
+.aux-devTools button {
+    width: 100%}
+.fxshell-tabcontainer-collapsed {
+    display: none;
+}
+.fxshell-tabcontainer {
+    margin-top: 15px;
+}
+.fsxshell-tablist {
+    padding: 0;
+    list-style-type: none;
+}
+.fsxshell-tablist li {
+    float: left;
+    margin-right: 24px;
+}
+.fsxshell-tablist li a {
+    font-size: 12px;
+    font-weight: normal;
+    color: #7f7f7f;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.fsxshell-tablist li a:hover {
+    color: #509ed8;
+}
+.fsxshell-tablist li.selected a {
+    font-family: "Segoe UI Semibold", Verdana, Helvetica, Sans-Serif;
+    color: #323232;
+}
+.fsxshell-tablist li.selected a:hover {
+    color: #323232;
+}
+.aux-scrollbar {
+    position: relative;
+}
+.aux-scrollbar-container {
+    overflow: auto;
+}
+.aux-scrollbar-trackcontainer {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: #fff;
+    display: none;
+}
+.aux-scrollbar-trackcontainer-x {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    display: none;
+}
+#aux-drawer .aux-scrollbar-trackcontainer {
+    background-color: #999;
+}
+#aux-drawer .aux-scrollbar-track {
+    background-color: #777;
+}
+.aux-scrollbar-track {
+    position: relative;
+    width: 10px;
+    height: 100%;
+    top: 0;
+    margin-left: auto;
+    background-color: #f3f3f3;
+    cursor: pointer;
+}
+.aux-scrollbar-track-x {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 10px;
+    bottom: 0;
+    background-color: #f3f3f3;
+    cursor: pointer;
+}
+.aux-scrollbar-handle {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+.aux-scrollbar-handle-x {
+    position: relative;
+    height: 100%;
+    width: 100px;
+}
+.aux-scrollbar-handle, .aux-scrollbar-handle-x {
+    background-color: #d2d2d2;
+    transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+}
+.aux-scrollbar-handle:hover, .aux-scrollbar-handle-x:hover {
+    background-color: #535353;
+    transition: all 0 ease-in-out;
+    -moz-transition: all 0 ease-in-out;
+    -webkit-transition: all 0 ease-in-out;
+    -o-transition: all 0 ease-in-out;
+}
+.aux-scrollbar-handle.active, .aux-scrollbar-handle-x.active {
+    background-color: #86bde6;
+    transition: all 0 ease-in-out;
+    -moz-transition: all 0 ease-in-out;
+    -webkit-transition: all 0 ease-in-out;
+    -o-transition: all 0 ease-in-out;
+}
+.itemtitle {
+    font: 28px/40px "Segoe UI Light";
+    text-transform: lowercase;
+    color: #444;
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: relative;
+    display: inline-block;
+}
+.config-container {
+}
+.config-container .config-control-group {
+}
+.config-container .config-setting-control {
+    margin-bottom: 40px;
+}
+.config-container .config-control-group .config-setting-control {
+    float: left;
+    margin-right: 60px;
+}
+.config-container .aux-glanceLabel {
+    margin-bottom: 10px;
+    padding: 0;
+}
+.config-container .config-section-head {
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    font-size: 15px;
+    margin: 0 0 15px 0;
+}
+.connectionString-list table {
+    background-color: #f3f3f3;
+}
+.connectionString-list table td {
+    padding: 10px;
+}
+.drawer-preview-helper {
+    font-family: "Segoe UI";
+    font-size: 18px;
+    border: 1px solid #7f868c;
+    margin-top: 20px;
+    padding: 5px 30px 15px;
+    height: 200px;
+}
+.drawer-form-item {
+    margin-top: 18px;
+}
+.drawer-form-item:first-child {
+    margin-top: 0;
+}
+.drawer-form-item label {
+    text-transform: uppercase;
+    font-size: 11px;
+    display: block;
+    margin-bottom: 5px;
+}
+.drawer-form-item input {
+    border: 0;
+    background-color: #fff;
+    width: 284px;
+    padding: 6px 8px 7px 8px;
+}
+.drawer-form-item select {
+    border-style: none;
+    width: 300px;
+    padding: 6px 8px 7px 8px;
+}
+.drawer-form-item label.drawer-form-checkbox {
+    margin: 25px 20px 0 0;
+    text-transform: none;
+}
+.drawer-form-item label.drawer-form-checkbox>input[type="checkbox"] {
+    background-color: inherit;
+    width: auto;
+    padding: 0;
+    margin: -2px 10px 0 0;
+    vertical-align: middle;
+}
+.drawer-form-suffix {
+    width: 300px;
+    text-align: right;
+    font-size: 13px;
+}
+input.aux-form-error, select.aux-form-error {
+    border: 2px solid red;
+}
+.linked-resources-empty {
+}
+.storage-ViewAccessKeys {
+    width: 590px;
+}
+.sqlAzure-ViewCredentials {
+    width: 470px;
+}
+.aux-readonlyvalue>span {
+    font-family: "Segoe UI Semibold", "Helvetica Neue", Garuda, Arial, sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+.aux-readonlyvalue>div {
+    font-size: 11px;
+    color: #434343;
+    background-color: #f3f3f3;
+    font-family: Consolas, "Monaco";
+    padding: 7px 10px;
+    word-wrap: break-word;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.vm-add input[type=text], .vm-add input[type=password] {
+    border: 1px solid #a1a1a1;
+    padding: 6px 8px 7px;
+}
+.vm-add input[type=checkbox] {
+    width: auto;
+}
+.vm-add span {
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+    top: -3;
+}
+.ui-corner-all {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+#fxshell-wallpaper {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+#fxshell-wallpaper-b, #fxshell-wallpaper-a {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+#fxshell-wallpaper-b {
+    background: transparent 0 bottom repeat fixed;
+}
+#fxshell-wallpaper-a {
+    background: transparent url(//az213233.vo.msecnd.net/Content/Images/wallpaper-white.png) 0 bottom repeat fixed;
+}
+#aux-GridContent, .aux-tabcontent {
+    margin-top: 20px;
+}
+.appDashboard-linkedRes {
+    padding-bottom: 150px;
+}
+.aux-secondaryNavTitle {
+    font-family: "Segoe UI Light", Verdana, Helvetica, Sans-Serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: #232323;
+    padding-left: 20px;
+}
+#antaresMonitorTabChart, #hsProdMonitorTabChart, #hsStagingMonitorTabChart, #storageMonitorTabChart {
+    position: relative;
+}
+.aux-tabcontent {
+    position: relative;
+}
+#fxshell-tabshield {
+    display: none;
+    position: absolute;
+    background: #fff;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    opacity: .5;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#fxshell-tabspinner {
+    display: none;
+    position: fixed;
+    background: transparent url(//az213233.vo.msecnd.net/Content/Images/spinner-md.gif) 40% 40% no-repeat;
+    top: 140px;
+    bottom: 60px;
+    left: 50%;
+    width: 960px;
+    margin-left: -380px;
+    z-index: 100;
+}
+#fxshell-wiz-shield {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+    opacity: .75;
+}
+#fxshell-wiz-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    right: 0;
+}
+.fx-dialogpresenter-shield {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    opacity: 0;
+}
+.fx-dialogpresenter {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%}
+.fxshell-feedback {
+    font: 14px/14px "Segoe UI"}
+.fxshell-feedback h3 {
+    height: 34px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 16px;
+}
+.fxshell-feedback h3.fxshell-feedback-questionlabel {
+    margin-top: 10px;
+}
+.fxshell-feedback .fxshell-feedback-question h3 {
+    float: left;
+    width: 300px;
+}
+.fxshell-feedback textarea.fxshell-feedback-textarea {
+    resize: none;
+    width: 408px;
+    border: 1px solid #ccc;
+}
+.fxshell-feedback-slider {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    background-color: #e0e2e2;
+    border: 2px solid #fff;
+    height: 5px;
+    width: 408px;
+    float: left;
+}
+.fxshell-feedback-slider a.ui-slider-handle {
+    cursor: pointer;
+    position: absolute;
+    height: 7px;
+    top: -.3em;
+    width: 7px;
+    color: #fff;
+    text-decoration: none;
+}
+.fxshell-feedback-slider .ui-state-default, .fxshell-feedback-slider .ui-widget-content .ui-state-default, .fxshell-feedback-slider .ui-widget-header .ui-state-default, .fxshell-feedback-slider .ui-slider-range-min {
+    background: #1a5b7b url(//az213233.vo.msecnd.net/Content/Images/fxshell-feedbackslider-background.png) repeat-x scroll 50% 50%;
+    border: 2px solid #fff;
+}
+.fxshell-feedback-slider .ui-slider-horizontal .ui-slider-range-min {
+    left: 0;
+}
+.fxshell-feedback-slider .ui-slider-range {
+    border: 0;
+}
+.fxshell-feedback .fxshell-feedback-labels {
+    width: 100%;
+    overflow: auto;
+}
+.fxshell-feedback .fxshell-feedback-labels .fxshell-feedback-lowlabel {
+    float: left;
+    margin-bottom: 10px;
+}
+.fxshell-feedback .fxshell-feedback-labels .fxshell-feedback-highlabel {
+    float: right;
+    text-align: right;
+    margin-bottom: 10px;
+    margin-right: 30px;
+}
+.fxshell-feedback .fxshell-feedbackslider-flyout {
+    bottom: 18px;
+    margin: 0 0 0 4px;
+    overflow: visible;
+    position: absolute;
+    background-color: #454545;
+    padding: 3px 6px 6px 7px;
+}
+.fxshell-feedback .fxshell-feedbackslider-flyoutarrow {
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #454545;
+    margin: -1px 0 10px 4px;
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: -12px;
+}
+.fxshell-feedback .fxshell-feedbackslider-flyout div span {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 4px 0 0;
+    font-weight: bold;
+    padding: 0 3px 0 0!important;
+}
+.waz-config h2 {
+    font-size: 20px;
+    text-transform: lowercase;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #88b9e3;
+    margin: 41px 0 22px 0;
+}
+.waz-config h2.first, .waz-config .waz-config-help-header-section.first h2 {
+    margin-top: 0;
+}
+.waz-config.waz-config-help-header h2 {
+    border: 0;
+    float: left;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+.waz-config .waz-config-help-header-section .waz-config-help-balloon {
+    padding-top: 52px;
+    margin-right: 2px;
+    float: right;
+}
+.waz-config .waz-config-help-header-section.first .waz-config-help-balloon {
+    padding-top: 11px;
+}
+.waz-config .waz-config-help-header-section {
+    border-bottom: 2px solid #88b9e3;
+    overflow: hidden;
+}
+.waz-config .waz-config-setting {
+    position: relative;
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 22px;
+    margin-top: 22px;
+    overflow: auto;
+}
+.waz-config .waz-config-setting.last-child {
+    border-bottom: 0;
+}
+.waz-config .waz-config-setting>label {
+    display: block;
+    padding-top: 10px;
+    font-size: 11px;
+    font-family: "Segoe UI Semibold";
+    text-transform: uppercase;
+    float: left;
+    width: 170px;
+}
+.waz-config .waz-config-setting .waz-config-setting-value>span.unit {
+    line-height: 32px;
+    padding-left: 8px;
+    font-size: 18px;
+    text-transform: lowercase;
+    font-family: "Segoe UI Light"}
+.waz-config .waz-config-setting .waz-config-setting-value .waz-config-setting-slider {
+    width: 350px;
+    float: left;
+}
+.waz-config .waz-config-setting .waz-config-setting-value .waz-config-setting-dropdown {
+    width: 350px;
+    font-size: 18px;
+}
+.waz-config .waz-config-setting .waz-config-setting-value .waz-config-setting-list {
+    width: 350px;
+}
+.waz-config .waz-config-setting>label .sublabel {
+    font-family: "Segoe UI"}
+.waz-config .waz-config-setting-value {
+    float: left;
+    margin-top: 5px;
+}
+.waz-config .waz-config-setting .waz-config-help {
+    float: right;
+    margin-right: 2px;
+    padding-top: 11px;
+    overflow: hidden;
+}
+.waz-config .waz-config-setting .waz-config-setting-value-line {
+    margin-top: 20px;
+}
+.waz-config .waz-config-setting .waz-config-setting-value-line:first-child {
+    margin-top: 0;
+}
+.waz-grid.fx-grid .waz-grid-spinner {
+    width: 24px;
+    padding: 0;
+}
+.waz-grid.fx-grid .fx-grid-groupdata .waz-grid-spinner img {
+    vertical-align: middle;
+    width: 20px;
+}
+.waz-grid.fx-grid .fx-grid-groupdata .waz-grid-navigation {
+    padding: 0;
+}
+.waz-grid.fx-grid .fx-grid-groupdata .waz-grid-navigation span, .waz-grid.fx-grid .fx-grid-groupdata .waz-grid-navigation a {
+    padding-left: 10px;
+    display: block;
+}
+.waz-grid.fx-grid .fx-grid-groupdata .waz-grid-navigation a {
+    color: inherit;
+    font-family: "Segoe UI Semibold", Verdana, Helvetica, Sans-Serif;
+    background-color: #e1f3fb;
+}
+.waz-grid.fx-grid .fx-grid-groupdata .waz-grid-navigation a:hover, .waz-grid.fx-grid table tbody.fx-grid-groupdata tr:hover .waz-grid-navigation a, .waz-grid.fx-grid table tbody.fx-grid-groupdata tr:hover .waz-grid-navigation a:hover, .waz-grid.fx-grid table tbody.fx-grid-groupdata tr[aria-selected="true"] .waz-grid-navigation a, .waz-grid.fx-grid table tbody.fx-grid-groupdata tr[aria-selected="true"]:hover .waz-grid-navigation a, .waz-grid.fx-grid table tbody.fx-grid-groupdata tr[aria-selected="true"]:hover .waz-grid-navigation a:hover {
+    background-image: url(//az213233.vo.msecnd.net/Content/Images/grid-go-wht.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.waz-grid.fx-grid .fx-grid-groupdata .waz-grid-navigation a:hover, .waz-grid.fx-grid table tbody.fx-grid-groupdata tr:hover .waz-grid-navigation a:hover, .waz-grid.fx-grid table tbody.fx-grid-groupdata tr[aria-selected="true"]:hover .waz-grid-navigation a:hover {
+    text-decoration: none;
+    background-color: #71b1d1;
+}
+.waz-grid.fx-grid table tbody.fx-grid-groupdata tr:hover .waz-grid-navigation a {
+    background-color: #c3e7f7;
+}
+.waz-grid.fx-grid table tbody.fx-grid-groupdata tr:hover .waz-grid-navigation a:hover {
+    color: #fff;
+}
+.waz-grid.fx-grid table tbody.fx-grid-groupdata tr[aria-selected="true"] .waz-grid-navigation a, .waz-grid.fx-grid table tbody.fx-grid-groupdata tr[aria-selected="true"]:hover .waz-grid-navigation a {
+    background-color: #3aa0cc;
+}
+.waz-grid.fx-grid table tbody.fx-grid-groupdata tr .waz-grid-navigation a span {
+    padding-left: 0;
+    overflow: hidden;
+}
+.waz-grid.fx-grid table tbody.fx-grid-groupdata tr[aria-selected="true"] .waz-grid-navigation a span, .waz-grid.fx-grid table tbody.fx-grid-groupdata tr:hover .waz-grid-navigation a span {
+    margin-right: 25px;
+}
+.waz-grid.fx-grid .waz-grid-status {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+    margin-right: 6px;
+}
+.waz-grid.fx-grid span.waz-grid-status {
+    display: inline-block;
+    background: url(//az213233.vo.msecnd.net/Content/Images/ListIcons_16px.png) no-repeat right center;
+}
+.waz-grid.fx-grid tr[aria-selected="true"] td.status span.waz-grid-status {
+    background: url(//az213233.vo.msecnd.net/Content/Images/ListIcons_W_16px.png) no-repeat right center;
+}
+a.arrowlink {
+    background: transparent url(//az213233.vo.msecnd.net/Content/Images/icon-next-20-g-idl.png) no-repeat right 50%;
+    padding: 4px 0 3px 24px;
+}
+a.arrowlink:hover {
+    background-image: url(//az213233.vo.msecnd.net/Content/Images/icon-next-20-g-hvr.png);
+}
+a.arrowlink-right {
+    background: transparent url(//az213233.vo.msecnd.net/Content/Images/icon-next-20-g-idl.png) no-repeat right 50%;
+    padding: 4px 30px 3px 0;
+}
+a.arrowlink-right:hover {
+    background-image: url(//az213233.vo.msecnd.net/Content/Images/icon-next-20-g-hvr.png);
+}
+.waz-emptyplaceholder-message {
+    font-family: "Segoe UI Light";
+    font-size: 28px;
+    color: #737373;
+    margin-bottom: 20px;
+}
+.waz-emptyplaceholder-action {
+    color: #929397;
+    font-family: "Segoe UI Semibold";
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.waz-emptyplaceholder-action:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: #509ed8;
+}
+.fxshell-avatarbar-container {
+    position: fixed;
+    top: 0;
+    height: 30px;
+    left: 50%;
+    width: 960px;
+    margin-left: -480px;
+    z-index: 1000;
+    overflow: hidden;
+    background: #3c454f url(//az213233.vo.msecnd.net/Content/Images/fxshell.avatarbar.arrow.png) no-repeat 99% 10px;
+    transition: height .3s ease-in-out, background-position .2s ease-in-out;
+    -moz-transition: height .3s ease-in-out, background-position .2s ease-in-out;
+    -webkit-transition: height .3s ease-in-out, background-position .2s ease-in-out;
+    -o-transition: height .3s ease-in-out, background-position .2s ease-in-out;
+}
+.fxshell-avatarbar-container-expandable:hover {
+    cursor: pointer;
+}
+.fxshell-avatarbar-container.fxshell-avatarbar-expanded {
+    cursor: default;
+    background: #3c454f;
+    height: 80px;
+}
+.fxshell-avatarbar-expanded.fxshell-avatarbar-container:hover {
+    background-position: 99% 45px;
+}
+.fxshell-avatarbar-expanded.fxshell-avatarbar-container .fxshell-avatarbar-large {
+    top: 0;
+}
+.fxshell-avatarbar-expanded.fxshell-avatarbar-container .fxshell-avatarbar-small {
+    top: 80px;
+}
+.fxshell-avatarbar-links-container {
+    position: relative;
+    left: 20px;
+    top: 32px;
+    padding: 0;
+    margin: 0;
+}
+.fxshell-avatarbar-links-list {
+    list-style: none outside none;
+    padding: 0;
+    margin: 0;
+}
+.fxshell-avatarbar-links-listitem {
+    display: inline-block;
+}
+.fxshell-avatarbar-links-link {
+    display: inline-block;
+    font-family: "Segoe UI Semibold", Verdana, Helvetica, Sans-Serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-right: 19px;
+    text-decoration: none;
+    color: #fff;
+}
+.fxshell-avatarbar-links-link:hover {
+    color: #509ed8;
+    text-decoration: none;
+}
+.fxshell-avatarbar-links-selectedlink.fxshell-avatarbar-links-link {
+    color: #509ed8;
+}
+.fxshell-avatarbar-login-container {
+    color: #fff;
+    font-family: "Segoe UI Semibold", Verdana, Helvetica, Sans-Serif;
+    font-size: 11px;
+}
+.fxshell-avatarbar-large .fxshell-avatarbar-login-container .fxshell-avatarbar-username {
+    bottom: 13px;
+    position: absolute;
+    right: 35px;
+}
+.fxshell-avatarbar-login-container a:hover {
+    text-decoration: none;
+    color: #509ed8;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.fxshell-avatarbar-login-container>* {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.fxshell-avatarbar-large {
+    position: relative;
+    top: -80px;
+    height: 80px;
+    width: 100%;
+    transition: top .3s ease-in-out;
+    -moz-transition: top .3s ease-in-out;
+    -webkit-transition: top .3s ease-in-out;
+    -o-transition: top .3s ease-in-out;
+}
+.fxshell-avatarbar-large .fxshell-avatarbar-logo {
+    position: relative;
+    left: 20px;
+    top: 15px;
+}
+.fxshell-avatarbar-large .fxshell-avatarbar-login-container .fxshell-avatarbar-userpicture {
+    position: relative;
+    top: -40px;
+    float: right;
+    width: 80px;
+    height: 80px;
+    padding-right: 16px;
+}
+.fxshell-avatarbar-sigoutandfeedback {
+    color: #fff;
+    height: 40px;
+    padding-right: 16px;
+    position: absolute;
+    text-transform: uppercase;
+    text-align: right;
+    top: 22px;
+    width: 200px;
+    right: 20px;
+}
+.fxshell-avatarbar-feedback {
+    position: absolute;
+    left: 50%;
+    top: 4px;
+    padding-left: 45px;
+}
+.fxshell-avatarbar-privacylinks {
+    color: #fff;
+    height: 40px;
+    padding-right: 16px;
+    position: absolute;
+    right: 20px;
+    text-align: right;
+    text-transform: uppercase;
+    top: 7px;
+    width: 200px;
+}
+.fxshell-avatarbar-privacylinks a {
+    color: #99a4b0;
+    text-decoration: none;
+    font-size: 10px;
+}
+.fxshell-avatarbar-sigoutandfeedback a {
+    color: #fff;
+    text-decoration: none;
+}
+.fxshell-avatarbar-username {
+    display: block;
+    text-transform: none;
+    padding-bottom: 6px;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    font-size: 12px;
+}
+.fxshell-avatarbar-small {
+    position: relative;
+    top: -80px;
+    height: 30px;
+    width: 100%;
+    transition: top .3s ease-in-out;
+    -moz-transition: top .3s ease-in-out;
+    -webkit-transition: top .3s ease-in-out;
+    -o-transition: top .3s ease-in-out;
+}
+.fxshell-avatarbar-small .fxshell-avatarbar-logo {
+    position: relative;
+    left: 20px;
+    top: 8px;
+}
+.fxshell-avatarbar-small .fxshell-avatarbar-login-container .fxshell-avatarbar-userpicture {
+    float: right;
+    height: 30px;
+    position: relative;
+    right: 0;
+    top: -18px;
+    width: 30px;
+}
+.fxshell-avatarbar-small .fxshell-avatarbar-login-container .fxshell-avatarbar-username {
+    position: relative;
+    top: -18px;
+    left: -20px;
+    float: right;
+    padding-right: 16px;
+    width: 450px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: right;
+    font: 12px/30px "Segoe UI", Verdana, Helvetica, Sans-Serif;
+}
+.fxshell-logviewer-widget .fxshell-logviewer-configurationbar {
+    border-bottom: 1px solid #303030;
+    margin-bottom: 2px;
+    padding-bottom: 4px;
+}
+.fxshell-logviewer-widget .fxshell-logviewer-configurationbar input[type=checkbox] {
+    margin-left: .5em;
+    vertical-align: text-top;
+}
+.fxshell-logviewer-widget .fxshell-logviewer-configurationbar input[type=button] {
+    margin-left: .5em;
+}
+.fxshell-logviewer-widget .fxshell-logviewer-configurationbar input[type=text].fxshell-logviewer-regexpfilter-text {
+    margin-left: 8px;
+}
+.fxshell-logviewer-logcontainer p.fxshell-logentry {
+    margin: 2px 0 6px 0;
+}
+.fxshell-logviewer-logcontainer .fxshell-logentry-header {
+    font-weight: bold;
+}
+.fxshell-logviewer-logcontainer .fxshell-logentry-error {
+    color: red;
+}
+.fxshell-logviewer-logcontainer .fxshell-logentry-warning {
+    color: #ffa500;
+}
+.fxshell-logviewer-logcontainer .fxshell-logentry-performance {
+    color: blue;
+}
+.fxshell-logviewer-logcontainer .fxshell-logentry-information, .fxshell-logviewer-logcontainer .fxshell-logentry-verbose {
+    color: #000;
+}
+.fxshell-logentry-filtered-out {
+    display: none;
+}
+.fxshell-drawer {
+    background-color: #3c454f;
+    color: #fff;
+    height: 60px;
+    position: relative;
+}
+.fxshell-drawer-screen {
+    background-color: #000;
+    bottom: 0;
+    display: none;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.fxshell-drawer-screeninner {
+    background-color: #fff;
+    bottom: 0;
+    display: none;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#fxshell-drawer-surround {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    width: 960px;
+    margin-left: -480px;
+    z-index: 2000;
+}
+.fxshell-drawer-container {
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+}
+.fxshell-drawer-slip {
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+.fxshell-drawer-guard {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 120px;
+    height: 60px;
+}
+.fxshell-drawer-creation {
+    height: 530px;
+    position: relative;
+}
+.fxshell-drawer-title, .fxshell-drawer-helptitle {
+    font: bold 14px/70px "Segoe UI";
+    color: #7acbf2;
+    padding: 0 0 0 35px;
+    text-transform: uppercase;
+}
+.fxshell-drawer-menu {
+    border-bottom: 1px solid #3c454f;
+    overflow: hidden;
+}
+.fxshell-drawer-menu .fxshell-drawer-addmenu, .fxshell-drawer-menu .fxshell-drawer-addmenu-sub {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.fxshell-drawer-addmenu-sub {
+    display: none;
+}
+.fxshell-drawer-menu .fxshell-drawer-addmenu-sub {
+    border-left: 1px solid #7f868c;
+    border-right: 1px solid #7f868c;
+}
+.fxshell-drawer-menu .fxshell-drawer-addmenu ul, .fxshell-drawer-menu .fxshell-drawer-addmenu-sub ul {
+    list-style-type: none;
+    height: 331px;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0;
+    width: 229px;
+}
+.fxshell-drawer-menu .fxshell-drawer-addmenu li, .fxshell-drawer-menu .fxshell-drawer-addmenu-sub li {
+    -moz-transition: all .1s;
+    -o-transition: all .1s;
+    -webkit-transition: all .1s;
+    font-size: 11px;
+    border-left: 5px solid transparent;
+    cursor: pointer;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 30px;
+    transition: all .1s;
+    white-space: nowrap;
+}
+.fxshell-drawer-menu .fxshell-drawer-addmenu li[aria-disabled="true"] {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)"!important;
+    opacity: .3!important;
+}
+.fxshell-drawer-menu .fxshell-drawer-addmenu-sub li {
+    padding-left: 20px;
+}
+.fxshell-drawer-menu .fxshell-drawer-addmenu li.selected, .fxshell-drawer-menu .fxshell-drawer-addmenu-sub li.selected, .fxshell-drawer-menu .fxshell-drawer-addmenu li.selected:hover, .fxshell-drawer-menu .fxshell-drawer-addmenu-sub li.selected:hover {
+    -moz-transition: all .1s;
+    -o-transition: all .1s;
+    -webkit-transition: all .1s;
+    background-color: #6d747b;
+    border-left: 5px solid #fff;
+    transition: all .1s;
+}
+.fxshell-drawer-menu .fxshell-drawer-addmenu li[aria-disabled="false"]:hover, .fxshell-drawer-menu .fxshell-drawer-addmenu-sub li:hover {
+    -moz-transition: all .1s;
+    -o-transition: all .1s;
+    -webkit-transition: all .1s;
+    background-color: #6d747b;
+    transition: all .1s;
+}
+.fxshell-drawer-menu .fxshell-drawer-addmenu li div.icon, .fxshell-drawer-menu .fxshell-drawer-addmenu-sub li div.icon {
+    background: url(//az213233.vo.msecnd.net/Content/Images/drawer-icons.0.png) center center no-repeat;
+    float: left;
+    height: 34px;
+    margin-right: 12px;
+    width: 40px;
+    margin-top: 5px;
+}
+.fxshell-drawer-menu li div.icon.PlansAdminMenuItem {
+    background-position: 0 -650px;
+}
+.fxshell-drawer-menu li div.icon.SystemCenterAdminExtension {
+    background-position: 0 -798px;
+}
+.fxshell-drawer-menu li div.icon.NotificationAdminMenuItem {
+    background-position: 0 -600px;
+}
+.fxshell-drawer-menu li div.icon.AccountsAdminMenuItem {
+    background-position: 0 -550px;
+}
+.fxshell-drawer-menu li div.icon.MediaService {
+    background-position: 0 -949px;
+}
+.fxshell-drawer-menu li div.icon.SqlAdminMenuItem {
+    background-position: 0 -899px;
+}
+.fxshell-drawer-menu li div.icon.MySqlAdminMenuItem {
+    background-position: 0 -849px;
+}
+.fxshell-drawer-menu li div.icon.AntaresCloudMenuItem {
+    background-position: 0 -34px;
+}
+.fxshell-drawer-menu li div.icon.WebSite {
+    background-position: 0 -97px;
+}
+.fxshell-drawer-menu li div.icon.HostedService {
+    background-position: 0 -49px;
+}
+.fxshell-drawer-menu li div.icon.VirtualMachineExtension {
+    background-position: -1px -149px;
+}
+.fxshell-drawer-menu li div.icon.StorageAccount {
+    background-position: 0 -249px;
+}
+.fxshell-drawer-menu li div.icon.Database {
+    background-position: 0 -349px;
+}
+.fxshell-drawer-menu li div.icon.MySQL {
+    background-position: 0 -849px;
+}
+.fxshell-drawer-menu li div.icon.SqlServer {
+    background-position: 0 -899px;
+}
+.fxshell-drawer-menu li div.icon.SystemCenterExtension {
+    background-position: 0 -103px;
+}
+.fxshell-drawer-menu li div.icon.NetworkExtension {
+    background-position: 1px -300px;
+}
+.fxshell-drawer-menu li div.icon.QuickCreate {
+    background-image: url(//az213233.vo.msecnd.net/Content/Images/icon-drawer-quickcreate-32-w.png);
+}
+.fxshell-drawer-menu li div.icon.FromMarketplace {
+    background-image: url(//az213233.vo.msecnd.net/Content/Images/icon-drawer-marketplace-32-w.png);
+}
+.fxshell-drawer-menu li div.icon.FromPackage {
+    background-image: url(//az213233.vo.msecnd.net/Content/Images/icon-drawer-customcreate-32-w.png);
+}
+.fxshell-drawer-menu li div.icon.CustomCreate {
+    background-image: url(//az213233.vo.msecnd.net/Content/Images/icon-drawer-customcreate-32-w.png);
+}
+.fxshell-drawer-menu li div.icon.Create {
+    background-image: url(//az213233.vo.msecnd.net/Content/Images/icon-drawer-customcreate-32-w.png);
+}
+.fxshell-drawer-menu li div.icon.FromNetcfg {
+    background-image: url(//az213233.vo.msecnd.net/Content/Images/icon-fromnetcfg-32-w-idl.png);
+}
+.fxshell-drawer-menu li span {
+    float: left;
+    text-transform: uppercase;
+    font-family: "Segoe UI Semibold"}
+.fxshell-drawer-addmenu-details {
+    float: left;
+    padding: 0 0 0 35px;
+    width: 430px;
+}
+.fxshell-drawer-close {
+    background: transparent url(//az213233.vo.msecnd.net/Content/Images/icons-action-32-sprites.png) no-repeat 0 -127px;
+    border: 0;
+    cursor: pointer;
+    height: 32px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 32px;
+}
+.fxshell-drawer-close:hover {
+    background-position: -64px -127px;
+}
+.fxshell-drawer-close:active {
+    background-position: -192px -127px;
+}
+.fxshell-drawer-ok {
+    background: transparent url(//az213233.vo.msecnd.net/Content/Images/icon-submit-32-w-idl.png) no-repeat right center;
+    bottom: 40px;
+    color: inherit;
+    display: inline-block;
+    font: 14px/32px 'Segoe UI Semibold';
+    height: 32px;
+    padding-right: 40px;
+    position: absolute;
+    right: 265px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.fxshell-drawer-ok:hover {
+    background-image: url(//az213233.vo.msecnd.net/Content/Images/icon-submit-32-w-hvr.png);
+    color: #fff;
+    text-decoration: none;
+}
+.fxshell-drawer-content {
+    margin: 0 auto;
+    text-align: left;
+    height: 100%}
+.fxshell-drawer-help-frame {
+    background-color: #3c454f;
+    border-style: none;
+    width: 100%;
+    height: 100%}
+.fxshell-drawer-controlBar {
+    font-size: 10px;
+    height: 60px;
+    overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+    background: transparent url(//az213233.vo.msecnd.net/Content/Images/fxshell.drawer-controlbar-bkg.jpg) repeat-x left bottom;
+}
+.fxshell-commandbar-container {
+    height: 60px;
+    max-width: 600px;
+}
+.fxshell-commandbar-container ul.fxshell-commandbar-globalcommands-list {
+    display: inline;
+}
+.fxshell-commandbar-container ul.fxshell-commandbar-globalcommands-list button {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.fxshell-commandbar-globalcommands-list {
+    display: inline-block;
+    height: 60px;
+    width: auto;
+}
+.fxshell-commandbar-contextualcommands-list {
+    display: inline-block;
+    height: 60px;
+    width: auto;
+}
+.fxshell-commandbar-flyout {
+    background-color: #495461;
+    color: #fff;
+    display: inline-block;
+    position: fixed;
+}
+.fxshell-commandbar-flyout ul {
+    cursor: pointer;
+    border-top: 3px solid #27aae1;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+.fxshell-commandbar-flyout ul button {
+    background: none repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #3c454f;
+    font-size: 10px;
+    border: 0 none;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 12px;
+    text-align: left;
+    width: 100%}
+.fxshell-commandbar-flyout ul button:hover {
+    background-color: #3c454f;
+}
+.fxshell-drawer-controlBar .fxshell-icon-img {
+    background: no-repeat 0 0;
+    display: inline-block;
+    height: 34px;
+    left: 30px;
+    position: absolute;
+    width: 34px;
+}
+.fxshell-drawer-controlBar button {
+    background: transparent;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: inherit;
+    height: 60px;
+    text-transform: uppercase;
+}
+.fxshell-drawer-controlBar button[disabled] {
+    cursor: default;
+}
+.fxshell-drawer-controlBar button:hover {
+    background-color: #505861;
+}
+.fxshell-drawer-controlBar button:active {
+    background-color: #708ea0;
+}
+.fxshell-drawer-controlBar button.disabled:hover {
+    background-color: transparent;
+}
+button.fxshell-drawer-open {
+    left: 0;
+    padding: 0 15px 0 0;
+    position: absolute;
+    font: 14px/25px "Segoe UI Semibold", Verdana, Helvetica, Sans-Serif;
+    text-align: left;
+    text-indent: 64px;
+}
+button.fxshell-drawer-open:hover {
+    background: transparent url(//az213233.vo.msecnd.net/Content/Images/fxshell.drawer-add-bkg.png) no-repeat -5px bottom;
+}
+button.fxshell-drawer-open .fxshell-icon-img {
+    background-image: url(//az213233.vo.msecnd.net/Content/Images/icon-drawer-add.png);
+}
+.fxshell-drawer-buttonContainer {
+    position: absolute;
+    right: 60px;
+    top: 0;
+}
+.fxshell-drawer-buttonContainer button img {
+    vertical-align: -3px;
+    float: right;
+}
+.fxshell-drawer-buttonContainer button .notification-count {
+    float: left;
+}
+.fxshell-drawer-buttonContainer button.fxshell-drawer-notification img, .fxshell-drawer-buttonContainer button.fxshell-drawer-progress img {
+    float: right;
+}
+.fxshell-drawer-buttonContainer button.fxshell-drawer-notification span, .fxshell-drawer-buttonContainer button.fxshell-drawer-progress span {
+    float: left;
+    font: 14px "Segoe UI Semibold", Verdana, Helvetica, Sans-Serif;
+    padding-right: 3px;
+    color: #ccc;
+}
+button.fxshell-drawer-notification-warning {
+    color: #e9e9e9;
+}
+button.fxshell-drawer-notification-error {
+    color: #f55c3f;
+}
+button.fxshell-drawer-help {
+    line-height: 0;
+    padding: 0 30px 0 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+}
+button.fxshell-drawer-help-off {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    opacity: .5;
+}
+button.fxshell-drawer-help .fxshell-icon-img {
+    position: static;
+    line-height: 43px;
+}
+.fxshell-drawer-commandBar {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+}
+.fxshell-drawer-commandBar li {
+    display: inline-block;
+    vertical-align: top;
+}
+.fxshell-drawer-commandBar li button {
+    display: block;
+    position: relative;
+    width: 85px;
+    padding-bottom: 11px;
+    font-size: 9px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+.fxshell-drawer-commandBar li button[disabled] {
+    cursor: default;
+}
+.fxshell-drawer-commandBar li button .fxshell-icon-img {
+    display: block;
+    margin: 0 auto 1px;
+    position: static;
+    width: 32px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
+    opacity: .95;
+}
+.fxshell-drawer-commandBar li button.disabled, .fxshell-drawer-controlBar.disabled a {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    opacity: .4;
+    cursor: default;
+}
+.fxshell-drawer-commandBar li button:hover {
+    background-color: #505861;
+}
+.fxshell-drawer-commandBar li button:active {
+    background-color: #708ea0;
+}
+.fxshell-drawer-commandBar li button.disabled:hover {
+    background-color: transparent;
+}
+.fxshell-drawer-commandBar li button:hover .fxshell-icon-img {
+    background-position: -64px -191px;
+}
+.fxshell-drawer-commandBar li button:active .fxshell-icon-img {
+    background-position: -192px -191px;
+}
+.fxshell-toastbox {
+    height: 0;
+    left: 0;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+.fxshell-toastbox-container {
+    background: #495461;
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+}
+.fxshell-toastbox-controls {
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+button.fxshell-toastbox-close {
+    background: url(//az213233.vo.msecnd.net/Content/Images/icon-drawer-chevron-collapse.png) no-repeat left 50%;
+    border: 0;
+    cursor: pointer;
+    height: 55px;
+    text-indent: -9999em;
+    width: 54px;
+}
+.fxshell-toastbox-contentContainer {
+    overflow: auto;
+}
+ul.fxshell-draweralertbox-notifications {
+    font: 11px "Segoe UI Semibold", Verdana, Helvetica, Sans-Serif;
+    line-height: 28px;
+    list-style-type: none;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0;
+}
+ul.fxshell-draweralertbox-notifications li {
+    clear: both;
+    height: 55px;
+    line-height: 28px;
+    border-top: 1px solid #343d45;
+    position: relative;
+}
+ul.fxshell-draweralertbox-notifications li:first-child {
+    border-top: none;
+}
+.fxshell-draweralertbox-notifications h4 {
+    font-weight: bold;
+    line-height: 34px;
+    list-style-type: none;
+    margin: 0;
+    width: 100%}
+.fxshell-draweralertbox-notifications h4>a {
+    background: transparent no-repeat 32px 50%;
+    border: 0;
+    color: #fff;
+    display: block;
+    padding: 10px 57px 11px 58px;
+    text-align: left;
+    white-space: nowrap;
+}
+.fxshell-draweralertbox-notifications h4>a, .fxshell-draweralertbox-notifications h4>a.fxshell-disabled:hover {
+    background-color: transparent;
+    transition: background-color .2s;
+    -moz-transition: background-color .2s;
+    -webkit-transition: background-color .2s;
+    -o-transition: background-color .2s;
+}
+.fxshell-draweralertbox-notifications h4>a:hover, .fxshell-draweralertbox-notifications h4>a:focus {
+    background-color: #282f35;
+    transition: background-color .2s;
+    -moz-transition: background-color .2s;
+    -webkit-transition: background-color .2s;
+    -o-transition: background-color .2s;
+}
+.fxshell-draweralertbox-notifications li.fxshell-draweralertbox-severity-information h4>a {
+    background-image: url(//az213233.vo.msecnd.net/Content/Images/icon-drawer-information.png);
+}
+.fxshell-draweralertbox-notifications li.fxshell-draweralertbox-severity-warning h4>a {
+    background-image: url(//az213233.vo.msecnd.net/Content/Images/icon-drawer-warning.png);
+}
+.fxshell-draweralertbox-notifications li.fxshell-draweralertbox-severity-error h4>a {
+    background-image: url(//az213233.vo.msecnd.net/Content/Images/icon-drawer-error.png);
+}
+.fxshell-draweralertbox-buttonContainer {
+    margin: 0;
+    padding: 11px 84px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.fxshell-draweralertbox-alertBehavior {
+    margin: 0;
+    padding: 11px 84px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.fxshell-draweralertbox-buttonContainer button {
+    background: transparent;
+    border: 0;
+    float: right;
+    height: 33px;
+    margin: 0 0 0 15px;
+    color: #fff;
+    font: 11px "Segoe UI Semibold", Verdana, Helvetica, Sans-Serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.fxshell-draweralertbox-alertDetails-supportInfo {
+    height: 174px;
+    overflow-y: auto;
+}
+.fxshell-draweralertbox-alertDetails-supportInfo p {
+    margin: 0;
+    width: 90%;
+    word-wrap: break-word;
+}
+.fxshell-draweralertbox-alertDetailContainer {
+    padding: 18px 40px;
+    position: relative;
+}
+.fxshell-draweralertbox-back {
+    background: transparent url(//az213233.vo.msecnd.net/Content/Images/icon-progress-back-arrow.png) no-repeat 0 50%;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font: 12px "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    padding-left: 15px;
+    text-transform: uppercase;
+}
+.fxshell-draweralertbox-alertDetailContainer div.fxshell-draweralertbox-alertBehavior {
+    float: right;
+    width: 28%;
+    top: 0;
+}
+.fxshell-draweralertbox-alertDetailContainer div.fxshell-draweralertbox-buttonContainer {
+    padding: 0;
+    position: static;
+}
+.fxshell-draweralertbox-alertDetailContainer div.fxshell-draweralertbox-buttonContainer button {
+    margin-bottom: 18px;
+}
+div.fxshell-draweralertbox-buttonContainer button span {
+    padding: 0 10px;
+    vertical-align: -8px;
+}
+div.fxshell-draweralertbox-buttonContainer button img {
+    float: right;
+}
+div.fxshell-draweralertbox-buttonContainer button.fxshell-draweralertbox-button-dismiss span {
+    display: none;
+}
+.fxshell-drawerprogressbox .fxshell-toastbox-close {
+    height: 56px;
+    margin-top: 5px;
+}
+.fxshell-drawerprogressbox-open .fxshell-toastbox-close {
+    margin-top: 5px;
+}
+.fxshell-drawerprogressbox-multi .fxshell-toastbox-close {
+    height: 40px;
+    margin-top: 0;
+}
+.fxshell-drawerprogressbox-details .fxshell-toastbox-close {
+    height: 56px;
+    margin-top: 5px;
+}
+.fxshell-drawerprogressbox .fxshell-toastbox-contentContainer {
+    margin: 0;
+}
+.fxshell-drawerprogressbox-progressSummaries .fxshell-drawerprogressbox-progressOverallStatus {
+    background-color: #343d45;
+    display: none;
+    overflow: hidden;
+}
+.fxshell-drawerprogressbox-progressSummariesMulti .fxshell-drawerprogressbox-progressOverallStatus {
+    display: inherit;
+}
+.fxshell-drawerprogressbox-progressOverallStatus>h4, .fxshell-drawerprogressbox-progressOverallStatus .fxshell-drawerprogressbox-dismissAll {
+    font: 11px "Segoe UI Semibold", Verdana, Helvetica, Sans-Serif;
+    float: left;
+    line-height: 40px;
+    margin: 0;
+    padding-left: 32px;
+    text-transform: uppercase;
+}
+.fxshell-drawerprogressbox-progressOverallStatus .fxshell-drawerprogressbox-dismissAll {
+    background: url(//az213233.vo.msecnd.net/Content/Images/icon-drawer-dismissall.png) 100% 50% no-repeat;
+    color: #fff;
+    float: right;
+    margin-right: 86px;
+    padding-right: 20px;
+}
+.fxshell-drawerprogressbox-progressSummaries ul {
+    list-style-type: none;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0;
+}
+.fxshell-drawerprogressbox-progressSummaries ul li {
+    border-top: 1px solid #343d45;
+    clear: both;
+}
+.fxshell-drawerprogressbox-progressSummaries ul li:first-child {
+    border-top-width: 0;
+}
+.fxshell-drawerprogressbox-progressSummariesMulti ul li:first-child {
+    border-top-width: 1px;
+}
+.fxshell-drawerprogressbox-progressSummaries.fxshell-drawerprogressbox-announceNew ul li {
+    display: none;
+}
+.fxshell-drawerprogressbox-progressSummaries.fxshell-drawerprogressbox-announceNew ul li.fxshell-drawerprogressbox-isNew {
+    display: inherit;
+}
+.fxshell-drawerprogressbox-progressSummary {
+    position: relative;
+}
+.fxshell-drawerprogressbox-progressIndicator, .fxshell-drawerprogressbox-unknownProgressIndicator {
+    background: #637283 url(//az213233.vo.msecnd.net/Content/Images/bkg-progress-nondeterministic-anim.gif) repeat-x left top;
+    height: 5px;
+    left: 0;
+    position: absolute;
+    text-indent: -9999em;
+    top: 0;
+    width: 100%}
+.fxshell-drawerprogressbox-progressIndicator {
+    background-color: #637283;
+    background-image: none;
+}
+.fxshell-drawerprogressbox-complete .fxshell-drawerprogressbox-unknownProgressIndicator {
+    background-color: #77c02f;
+    background-image: none;
+}
+.fxshell-drawerprogressbox-progressIndicatorStatus {
+    background: #77c02f;
+    height: 5px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+.fxshell-drawerprogressbox-complete-warning .fxshell-drawerprogressbox-progressIndicatorStatus, .fxshell-drawerprogressbox-complete-warning .fxshell-drawerprogressbox-unknownProgressIndicator {
+    background-color: #ff8c00;
+    background-image: none;
+}
+.fxshell-drawerprogressbox-complete-error .fxshell-drawerprogressbox-progressIndicatorStatus, .fxshell-drawerprogressbox-complete-error .fxshell-drawerprogressbox-unknownProgressIndicator {
+    background-color: #ed297a;
+    background-image: none;
+}
+.fxshell-drawerprogressbox-progressSummary h4 {
+    font: 11px "Segoe UI Semibold", Verdana, Helvetica, Sans-Serif;
+    line-height: 24px;
+    margin: 0;
+}
+.fxshell-drawerprogressbox-progressSummary h4 a, .fxshell-drawerprogressbox-progressSummary h4 a:active {
+    background: transparent url(//az213233.vo.msecnd.net/Content/Images/icon-drawer-processing-active.gif) no-repeat 32px 50%;
+    border: 0;
+    color: #fff;
+    cursor: default;
+    display: inline-block;
+    font: 11px "Segoe UI Semibold", Verdana, Helvetica, Sans-Serif;
+    height: 57px;
+    line-height: 57px;
+    margin: 5px 0 0;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 100%}
+.fxshell-drawerprogressbox-complete .fxshell-drawerprogressbox-progressSummary h4 a, .fxshell-drawerprogressbox-complete .fxshell-drawerprogressbox-progressSummary h4 a:active {
+    background: transparent url(//az213233.vo.msecnd.net/Content/Images/icon-progress-complete.png) no-repeat 39px 50%}
+.fxshell-drawerprogressbox-complete-warning .fxshell-drawerprogressbox-progressSummary h4 a, .fxshell-drawerprogressbox-complete-warning .fxshell-drawerprogressbox-progressSummary h4 a:active {
+    background: transparent url(//az213233.vo.msecnd.net/Content/Images/icon-drawer-warning.png) no-repeat 32px 50%}
+.fxshell-drawerprogressbox-complete-error .fxshell-drawerprogressbox-progressSummary h4 a, .fxshell-drawerprogressbox-complete-error .fxshell-drawerprogressbox-progressSummary h4 a:active {
+    background: transparent url(//az213233.vo.msecnd.net/Content/Images/icon-drawer-error.png) no-repeat 32px 50%}
+.fxshell-drawerprogressbox-progressSummariesMulti .fxshell-drawerprogressbox-complete .fxshell-drawerprogressbox-progressSummary h4 a, .fxshell-drawerprogressbox-progressSummariesMulti .fxshell-drawerprogressbox-complete .fxshell-drawerprogressbox-progressSummary h4 a:active {
+}
+.fxshell-drawerprogressbox-progressSummariesMulti h4 a, .fxshell-drawerprogressbox-progressSummariesMulti h4 a:active {
+}
+.fxshell-drawerprogressbox-progressSummary h4 a:hover, .fxshell-drawerprogressbox-progressSummary h4 a:focus {
+    text-decoration: none;
+}
+a.fxshell-drawerprogressbox-progressSummary-highlight:hover, a.fxshell-drawerprogressbox-progressSummary-highlight:focus {
+    background-color: #282f35;
+    cursor: pointer;
+    text-decoration: none;
+}
+.fxshell-drawerprogressbox-taskheader {
+    display: block;
+    left: 63px;
+    line-height: 57px;
+    max-width: 760px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    white-space: nowrap;
+}
+.fxshell-drawerprogressbox-progressSummariesMulti .fxshell-drawerprogressbox-taskheader {
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    left: 63px;
+    transition: all .3s ease-in;
+}
+.fxshell-drawerprogressbox-taskheader>span {
+    text-transform: none;
+}
+.fxshell-drawerprogressbox-currentStep {
+    display: inline-block;
+    text-indent: 20px;
+    font: 11px "Segoe UI", Verdana, Helvetica, Sans-Serif;
+}
+.fxshell-drawerprogressbox-progressButtonContainer {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.fxshell-drawerprogressbox-progressBehaviorContainer {
+    margin-right: 80px;
+    overflow: hidden;
+}
+.fxshell-drawerprogressbox-progressSummariesMulti .fxshell-drawerprogressbox-progressBehaviorContainer {
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    margin-right: 30px;
+    transition: all .3s ease-in;
+}
+.fxshell-drawerprogressbox-progressBehaviorContainer>button {
+    background: transparent;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    font: 11px "Segoe UI Semibold", Verdana, Helvetica, Sans-Serif;
+    height: 54px;
+    margin: 6px 0 0 15px;
+    padding: 0;
+    text-transform: uppercase;
+}
+.fxshell-drawerprogressbox-progressBehaviorContainer>button span {
+    padding-right: 10px;
+    vertical-align: 10px;
+}
+.fxshell-drawerprogressbox-progressBehavior .fxshell-drawerprogressbox-progressBehaviorContainer {
+    margin-right: 28px;
+}
+.fxshell-drawerprogressbox-progressBehavior .fxshell-drawerprogressbox-progressBehaviorContainer>button {
+    clear: left;
+    float: right;
+    height: 48px;
+    margin: 0;
+    padding-left: 0;
+}
+.fxshell-drawerprogressbox-progressStepsContainer .fxshell-drawerprogressbox-progressBehavior .fxshell-drawerprogressbox-progressBehaviorContainer>button {
+    clear: both;
+}
+.fxshell-drawerprogressbox-progressStepsContainer .fxshell-drawerprogressbox-progressBehavior .fxshell-drawerprogressbox-progressBehaviorContainer>button span {
+    padding-left: 10px;
+    vertical-align: -8px;
+}
+.fxshell-drawerprogressbox-progressStepsContainer .fxshell-drawerprogressbox-progressBehavior .fxshell-drawerprogressbox-progressBehaviorContainer>button img {
+    float: right;
+}
+.fxshell-drawerprogressbox-progressStepsContainer .fxshell-drawerprogressbox-button-details, .fxshell-drawerprogressbox-progressDetailContainer .fxshell-drawerprogressbox-button-details, .fxshell-drawerprogressbox-progressBehaviorContainer>button.fxshell-drawerprogressbox-button-dismiss span, .fxshell-drawerprogressbox-progressStepsContainer .fxshell-drawerprogressbox-progressBehavior .fxshell-drawerprogressbox-progressBehaviorContainer>button.fxshell-drawerprogressbox-button-dismiss span {
+    display: none;
+}
+.fxshell-drawerprogressbox-button-details {
+    display: none;
+}
+.fxshell-drawerprogressbox-progressSummaries .fxshell-drawerprogressbox-button-details {
+    display: inherit;
+}
+button.fxshell-drawerprogressbox-back {
+    background: transparent;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font: 12px "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    height: 30px;
+    left: 37px;
+    margin-left: 0;
+    padding-left: 0;
+    position: absolute;
+    text-transform: uppercase;
+    top: 18px;
+}
+button.fxshell-drawerprogressbox-back:hover, button.fxshell-drawerprogressbox-back:active, button.fxshell-drawerprogressbox-back:focus {
+    color: #fff;
+}
+.fxshell-drawerprogressbox-progressStepsContainer, .fxshell-drawerprogressbox-progressDetailContainer {
+    margin: 55px 0 30px 40px;
+    min-height: 100%;
+    overflow: hidden;
+}
+.fxshell-drawerprogressbox-progressStepsContainer h4, .fxshell-drawerprogressbox-progressDetailContainer h4 {
+    font: 16px "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    font-weight: normal;
+    left: 40px;
+    margin: 21px 22px 0;
+    position: absolute;
+    top: 0;
+}
+.fxshell-drawerprogressbox-progressStepsContainer ol {
+    line-height: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+span.fxshell-drawerprogressbox-stepgraphic {
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    padding: 0;
+    padding-left: 12px;
+    vertical-align: -4px;
+    width: 16px;
+}
+.fxshell-drawerprogressbox-progressSteps li a {
+    display: inline-block;
+}
+.fxshell-drawerprogressbox-progressSteps li span.fxshell-drawerprogressbox-stepgraphic {
+    background: url(//az213233.vo.msecnd.net/Content/Images/icon-progress-inprogress.gif) no-repeat 0 50%;
+    border: 0;
+    color: #fff;
+    line-height: 17px;
+    padding-left: 6px;
+}
+.fxshell-drawerprogressbox-progressSteps li.fxshell-drawerprogressbox-stepComplete span.fxshell-drawerprogressbox-stepgraphic {
+    background-image: url(//az213233.vo.msecnd.net/Content/Images/icon-progress-complete.png);
+}
+.fxshell-drawerprogressbox-progressSteps li.fxshell-drawerprogressbox-stepCompleteSeverity-warning span.fxshell-drawerprogressbox-stepgraphic {
+    background-image: url(//az213233.vo.msecnd.net/Content/Images/icon-progress-warning.png);
+}
+.fxshell-drawerprogressbox-progressSteps li.fxshell-drawerprogressbox-stepCompleteSeverity-error span.fxshell-drawerprogressbox-stepgraphic {
+    background-image: url(//az213233.vo.msecnd.net/Content/Images/icon-progress-error.png);
+}
+.fxshell-drawerprogressbox-progressSteps li a, .fxshell-drawerprogressbox-progressSteps li a:hover, .fxshell-drawerprogressbox-progressSteps li a:active, .fxshell-drawerprogressbox-progressSteps li a:focus {
+    color: #fff;
+    cursor: pointer;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    font-size: 12px;
+    text-decoration: none;
+}
+.fxshell-drawerprogressbox-progressSteps .fxshell-drawerprogressbox-stepWithDetail {
+    background: url(//az213233.vo.msecnd.net/Content/Images/icon-progress-forward-arrow.png) 100% 50% no-repeat;
+    padding-right: 30px;
+}
+.fxshell-drawerprogressbox-progressSteps li a:after {
+    color: #fff;
+    content: " ?";
+    font-weight: bold;
+    vertical-align: 2px;
+}
+.fxshell-drawerprogressbox-progressSteps li a:after {
+    content: ""}
+.fxshell-drawerprogressbox-progressDetailWrapper {
+    margin: 0 24px;
+}
+.fxshell-drawerprogressbox-stepsDetailWithBehavior div.fxshell-drawerprogressbox-progressSteps, .fxshell-drawerprogressbox-stepsDetailWithBehavior div.fxshell-drawerprogressbox-progressDetail {
+    float: left;
+    width: 80%}
+.fxshell-drawerprogressbox-progressDetails-supportInfo {
+    width: 1000px;
+    height: 124px;
+    overflow-y: auto;
+}
+.fxshell-drawerprogressbox-progressDetails-supportInfo p {
+    margin: 0;
+    width: 90%;
+    word-wrap: break-word;
+}
+.fxshell-drawerprogressbox-progressBehavior {
+    float: right;
+    margin-top: -26px;
+    width: 15%}
+.fxshell-drawerprogressbox-stepsDetailWithBehavior h4 {
+    margin: 0 0 10px 0;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 90%}
+.fxshell-drawerprogressbox-progressBehavior h5 {
+    color: #8c8c8c;
+    display: none;
+    font-size: 20px;
+    margin: 30px 0 15px;
+}
+.fxshell-drawerconfirmbox-confirmation {
+    min-height: 55px;
+}
+.fxshell-drawerconfirmbox-confirmation>h4 {
+    font: 11px "Segoe UI Semibold", Verdana, Helvetica, Sans-Serif;
+    height: 55px;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%}
+.fxshell-drawerconfirmbox-confirmation>h4 a {
+    border: 0;
+    color: #fff;
+    display: block;
+    line-height: 22px;
+    padding: 16px 20px 17px;
+    text-align: left;
+    white-space: nowrap;
+}
+.fxshell-drawerconfirmbox-open .fxshell-drawerconfirmbox-confirmation>h4 {
+    height: auto;
+    position: relative;
+    width: inherit;
+}
+.fxshell-drawerconfirmbox-open .fxshell-drawerconfirmbox-confirmation>h4 a {
+    white-space: normal;
+}
+.fxshell-drawerconfirmbox-confirmation>h4 a, .fxshell-drawerconfirmbox-confirmation>h4 a.fx-fxButton-disabled:hover, .fxshell-drawerconfirmbox-expanded .fxshell-drawerconfirmbox-confirmation>h4 a:active, .fxshell-drawerconfirmbox-expanded .fxshell-drawerconfirmbox-confirmation>h4 a:hover, .fxshell-drawerconfirmbox-expanded .fxshell-drawerconfirmbox-confirmation>h4 a:focus {
+    background: transparent;
+}
+.fxshell-drawerconfirmbox-confirmation>h4 a:hover, .fxshell-drawerconfirmbox-confirmation>h4 a:focus {
+    background: #222;
+}
+.fxshell-drawerconfirmbox-confirmationDetail {
+    display: none;
+    padding: 12px 30px 36px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    opacity: 0;
+}
+.fxshell-drawerconfirmbox-buttonContainer {
+    margin: 0;
+    padding: 11px 30px 11px 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.fxshell-drawerconfirmbox-buttonContainer button {
+    background: transparent;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    font: 11px "Segoe UI Semibold", Verdana, Helvetica, Sans-Serif;
+    height: 32px;
+    margin: 0 0 0 15px;
+    padding: 0;
+    position: relative;
+    text-transform: uppercase;
+}
+.fxshell-drawerconfirmbox-buttonContainer>button span {
+    padding-right: 10px;
+    vertical-align: 10px;
+}
+.fxshell-drawerconfirmbox-expanded h4, .fxshell-drawerconfirmbox-expanded .fxshell-drawerconfirmbox-confirmationDetail {
+    margin-right: 180px;
+}
+.fxshell-drawerconfirmbox-expanded .fxshell-drawerconfirmbox-buttonContainer {
+    width: 140px;
+}
+.fxshell-drawerconfirmbox-expanded .fxshell-drawerconfirmbox-buttonContainer>button {
+    clear: left;
+    float: left;
+    margin-bottom: 10px;
+}
+.fxshell-drawerconfirmbox-expanded .fxshell-drawerconfirmbox-buttonContainer>button span {
+    padding-left: 10px;
+    vertical-align: -8px;
+}
+.fxshell-drawerconfirmbox-expanded .fxshell-drawerconfirmbox-buttonContainer>button img {
+    float: left;
+}
+.fxshell-drawerconfirmbox-vipswap {
+    overflow: hidden;
+}
+.fxshell-drawerconfirmbox-vipswap>div {
+    float: left;
+    width: 33.3%}
+.fxshell-drawerconfirmbox-vipswap h4 {
+    color: #8c8c8c;
+    font-size: 20px;
+    margin-top: 0;
+    text-transform: lowercase;
+}
+.fxshell-drawerconfirmbox-vipswap dl {
+    overflow: hidden;
+}
+.fxshell-drawerconfirmbox-vipswap dt, .fxshell-drawerconfirmbox-vipswap dd {
+    float: left;
+    margin: 15px 0 5px;
+}
+.fxshell-drawerconfirmbox-vipswap dt.fxshell-drawerconfirmbox-vipswap-name, .fxshell-drawerconfirmbox-vipswap dd.fxshell-drawerconfirmbox-vipswap-name {
+    margin-top: 0;
+}
+.fxshell-drawerconfirmbox-vipswap dt.fxshell-drawerconfirmbox-vipswap-hostname, .fxshell-drawerconfirmbox-vipswap dd.fxshell-drawerconfirmbox-vipswap-hostname {
+    margin-top: 10px;
+}
+.fxshell-drawerconfirmbox-vipswap dt {
+    clear: left;
+    width: 25%}
+.fxshell-drawerconfirmbox-vipswap dd div {
+    margin: 0 0 5px;
+}
+.fxshell-drawerconfirmbox-upgrade {
+    overflow: hidden;
+}
+.fxshell-drawerconfirmbox-upgrade h4 {
+    color: #8c8c8c;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: lowercase;
+}
+.fxshell-drawerconfirmbox-upgrade-columns>div {
+    float: left;
+    width: 33.3%}
+.fxshell-drawerconfirmbox-upgrade-changes>div {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-indent: -10px;
+}
+.fxshell-dialogalertbox-expandContainer {
+    background: #495461;
+    color: #fff;
+    height: 0;
+    left: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 0;
+    z-index: 999;
+}
+.fxshell-dialogalertbox .fxshell-toastbox-contentContainer {
+    overflow-y: auto;
+    padding: 15px 30px;
+    max-height: 45px;
+}
+.ignore {
+}
+.app-control.app-radio {
+    border-left: .5px solid #bfbfbf;
+}
+.app-control.app-radio ul.radio {
+    padding: 0;
+}
+.app-control.app-radio li {
+    float: left;
+    padding: 2px 4px 2px 4px;
+    width: 60px;
+    line-height: 15px;
+    color: #7f7f7f;
+    background-color: #ddd;
+    border: .5px solid #bfbfbf;
+    border-left-style: none;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    list-style-type: none;
+    cursor: pointer;
+}
+.app-control.app-radio li.first {
+    border-left: .5px solid #bfbfbf;
+}
+.app-control.app-radio li.selected {
+    color: #fff;
+    background-color: #00b0f0;
+    border-color: #00b0f0;
+}
+.app-control.app-slider .slider-container {
+    position: relative;
+    padding-right: 45px;
+}
+.app-control.app-slider .slider-bar-container {
+    height: 31px;
+    border: 1px solid #bfbfbf;
+}
+.app-control.app-slider .ui-slider-horizontal {
+    width: 100%;
+    height: 100%;
+    float: left;
+    border-style: none;
+    background-color: #bfbfbf;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -khtml-border-radius: 0;
+    border-radius: 0;
+}
+.app-control.app-slider .ui-slider-handle {
+    width: 10px;
+    height: 36px;
+    background-color: #00b0f0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -khtml-border-radius: 0;
+    border-radius: 0;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+.app-control.app-slider .ui-slider-range-min {
+    background: none;
+    background-color: #00b0f0;
+}
+.app-control.app-slider .display-value {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 31px;
+    float: right;
+    color: #000;
+    font-size: 1.5em;
+    text-align: center;
+    border: 1px solid #bfbfbf;
+}
+.app-control.app-slider .value {
+    display: none;
+}
+.app-control.app-table table {
+    width: 100%}
+.app-control.app-table table td {
+    color: #7f7f7f;
+    padding: 3px 0 3px 0;
+    border-bottom: 1px solid #bfbfbf;
+}
+.app-control.app-table table td.hover {
+    color: #000;
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+.app-control.app-table .value {
+    float: left;
+}
+.app-control.app-table .row-input {
+    width: 100%;
+    padding: 3px 0 3px 0;
+    border: 1px solid #bfbfbf;
+}
+.app-control.app-table .actions {
+    float: right;
+}
+.app-control.app-table .action {
+    float: right;
+    width: 12px;
+    height: 12px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.app-control.app-table .action-delete {
+    background-image: url(//az213233.vo.msecnd.net/Content/Images/config-delete.png);
+}
+.app-control.app-table .action-up {
+    background-image: url(//az213233.vo.msecnd.net/Content/Images/config-up.png);
+}
+.app-control.app-table .action-down {
+    background-image: url(//az213233.vo.msecnd.net/Content/Images/config-down.png);
+}
+.app-control.app-table .action-add {
+    display: block;
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin: 4px 0 0 10px;
+    cursor: pointer;
+}
+.app-control.app-table .table-add-container {
+    padding-top: 6px;
+}
+.app-control.app-table .table-add-input-container {
+    margin-right: 50px;
+}
+.app-control.app-table .table-add-input-container input {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 4px 0 4px 4px;
+}
+.app-control.app-table .table-add-input-container input.default {
+    font-style: italic;
+    color: #bfbfbf;
+}
+.app-config .ui-button.changesButton {
+    font-size: 1em;
+    width: 75px;
+}
+.app-config .ui-button.changesButton.apply {
+    float: right;
+}
+.app-config .ui-button.changesButton.undo {
+    float: left;
+}
+.ignore {
+}
+.app-config {
+    width: 630px;
+}
+.app-config .aux-glanceLabel {
+    padding-left: 0;
+}
+.app-config .aux-secondaryNavTitle span {
+    display: block;
+    float: left;
+}
+.app-config-control.app-config-radio {
+    border-left: .5px solid #bfbfbf;
+}
+.app-config-control.app-config-radio ul.radio {
+    padding: 0!important;
+}
+.app-config-control.app-config-radio li {
+    float: left;
+    padding: 2px 4px 2px 4px;
+    width: 60px;
+    line-height: 20px;
+    color: #434343;
+    background-color: #ddd;
+    border: .5px solid #bfbfbf;
+    border-left-style: none;
+    font-weight: normal;
+    font-size: 11px;
+    text-align: center;
+    list-style-type: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.app-config-control.app-config-radio li.first {
+    border-left: .5px solid #bfbfbf;
+}
+.app-config-control.app-config-radio li.selected {
+    color: #fff;
+    background-color: #4f9dd7;
+    border-color: #4f9dd7;
+}
+.app-config-control.app-config-slider .slider-bar-container {
+    margin-right: 50px;
+}
+.app-config-control.app-config-slider .ui-slider-horizontal {
+    width: 100%;
+    height: 30px;
+    float: left;
+    border-color: #bfbfbf;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -khtml-border-radius: 0;
+    border-radius: 0;
+}
+.app-config-control.app-config-slider .ui-slider-handle {
+    width: 12px;
+    height: 36px;
+    background-color: #00b0f0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -khtml-border-radius: 0;
+    border-radius: 0;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+.app-config-control.app-config-slider .ui-slider-range-min {
+    background: none;
+    background-color: #00b0f0;
+}
+.app-config-control.app-config-slider .display-value {
+    width: 40px;
+    height: 30px;
+    margin-left: 5px;
+    float: left;
+    color: #000;
+    font-size: 1.5em;
+    text-align: center;
+    border: 1px solid #bfbfbf;
+}
+.app-config-control.app-config-slider .value {
+    display: none;
+}
+.app-config-control.app-config-table table {
+    width: 100%}
+.app-config-control.app-config-table table td {
+    color: #7f7f7f;
+    padding: 3px 0 3px 0;
+    border-bottom: 1px solid #bfbfbf;
+}
+.app-config-control.app-config-table table td.hover {
+    color: #000;
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+.app-config-control.app-config-table .value {
+    float: left;
+}
+.app-config-control.app-config-table .row-input {
+    width: 100%;
+    padding: 3px 0 3px 0;
+    border: 1px solid #bfbfbf;
+}
+.app-config-control.app-config-table .actions {
+    float: right;
+}
+.app-config-control.app-config-table .action {
+    float: right;
+    width: 12px;
+    height: 12px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.app-config-control.app-config-table .action-delete {
+    background-image: url(//az213233.vo.msecnd.net/Content/Images/config-delete.png);
+}
+.app-config-control.app-config-table .action-up {
+    background-image: url(//az213233.vo.msecnd.net/Content/Images/config-up.png);
+}
+.app-config-control.app-config-table .action-down {
+    background-image: url(//az213233.vo.msecnd.net/Content/Images/config-down.png);
+}
+.app-config-control.app-config-table .action-add {
+    display: block;
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin: 4px 0 0 10px;
+    cursor: pointer;
+}
+.app-config-control.app-config-table .table-add-container {
+    padding-top: 6px;
+}
+.app-config-control.app-config-table .table-add-input-container {
+    margin-right: 50px;
+}
+.app-config-control.app-config-table .table-add-input-container input {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 4px 0 4px 4px;
+}
+.app-config-control.app-config-table .table-add-input-container input.default {
+    font-style: italic;
+    color: #bfbfbf;
+}
+.app-config .ui-button.changesButton {
+    font-size: 1em;
+    width: 75px;
+}
+.app-config .ui-button.changesButton.apply {
+    float: right;
+}
+.app-config .ui-button.changesButton.undo {
+    float: left;
+}
+.ignore {
+}
+.forwardButton {
+    padding: 2px;
+    width: 16px;
+    height: 16px;
+    float: right;
+    margin-top: 8px;
+    cursor: pointer;
+}
+.backButton {
+    padding: 2px;
+    width: 16px;
+    height: 16px;
+    margin-top: 8px;
+    margin-right: 10px;
+    float: left;
+    cursor: pointer;
+}
+.app-glance {
+    width: 250px;
+}
+.app-glance p.aux-glanceValue {
+    padding: .25em 0 20px 20px!important;
+}
+.app-glance table.aux-monitoring {
+    width: 100%}
+.app-glance table.aux-monitoring th {
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    padding-right: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: Arial, Sans-Serif!important;
+}
+.app-glance table.aux-monitoring td {
+    text-align: left;
+    padding-top: 8px;
+    padding-bottom: 0;
+    padding-right: 0;
+    font-size: 14px;
+    font-family: Segoe UI, Arial, Sans-Serif!important;
+}
+.app-glance .app-glance-section {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.app-glanceHeader {
+    background-color: #fff;
+    text-align: left;
+    font-weight: normal;
+    color: #7f7f7f;
+}
+.app-glance table.aux-monitoring td:last-child {
+    padding-bottom: 4px;
+}
+.ignore {
+}
+.app-certificate-upload {
+    width: 500px;
+}
+.app-publish #app-packageButton {
+    width: 8em;
+}
+.app-publish table {
+    width: 100%}
+.app-publish table td, .app-publish table th {
+    text-align: left;
+    padding-right: 6px;
+}
+.app-publish table select, .app-publish table input {
+    width: 100%;
+    padding: 4px;
+}
+.app-publish label {
+}
+.app-publish label.error {
+    display: block;
+    color: red;
+}
+.app-publish.progress label {
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+}
+.app-publish input.app-url {
+    margin-bottom: 0;
+}
+.app-publish .app-dnsSuffix {
+    text-align: right;
+    margin-bottom: 1em;
+    margin-right: -10px;
+}
+.app-publish input[type=text], .app-publish input[type=password] {
+    border: 1px solid #bfbfbf;
+    background-color: #fff;
+    padding: 4px;
+}
+.app-publish input[type=password] {
+    border: 1px solid #bfbfbf;
+    background-color: #fff;
+}
+.app-publish input[type=file] {
+    border: 1px solid #bfbfbf;
+    background-color: #fff;
+    padding: 4px;
+}
+.app-create {
+    width: 520px;
+}
+.app-create .aux-dialog-item {
+    margin-bottom: 20px;
+}
+.app-create input[type=text] {
+    width: 480px;
+    padding: 4px;
+    margin-bottom: 0;
+}
+.app-create select {
+    width: 488px;
+    margin-bottom: 0;
+}
+.app-create .app-dnsSuffix {
+    width: 490px;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.app-create .app-double-item {
+    float: left;
+}
+.app-create .app-double-item input {
+    width: 235px;
+    margin-right: 8px;
+}
+.app-create .app-double-item:last-child {
+    margin-right: 0;
+}
+#appDashboard-Info td {
+    text-align: right;
+}
+#appDashboard-Info td.appDashboard-infoLabel {
+    font-weight: bold;
+    text-align: left;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+.appDashboard-usageLabel {
+    text-align: right;
+}
+.appDashboard-usageUnit {
+    font-weight: normal;
+}
+.unlinkRes .aux-glanceLabel {
+    font-family: "Segoe UI", Arial;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.unlinkRes label {
+    clear: both;
+    display: block;
+    margin-bottom: 0;
+    margin-top: .2em;
+}
+.unlinkRes .titleheader {
+    text-transform: uppercase;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.unlinkRes p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.unlinkRes .subheader {
+    font-family: Segoe UI Light;
+    font-size: 2em;
+    margin-top: 20px;
+    color: #000;
+}
+.unlinkres-listbox {
+    margin-top: 10px;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    height: 15em;
+    width: 50em;
+    overflow: auto;
+}
+.appDashboard-usageAndLinked {
+    float: left;
+}
+.appDashboard-info {
+    float: right;
+    padding-bottom: 80px;
+}
+.appDashboard-overview h2 {
+    margin: 40px 0 30px 0;
+    font-size: 20px;
+    color: #444;
+    letter-spacing: -.5px;
+    text-transform: lowercase;
+}
+.appDashboard-linkedResourcesEmpty {
+    font-size: 14px;
+}
+.appDashboard-linkedResourcesEmpty-link {
+    margin-top: 20px;
+}
+.appDashboard-linkedResourcesEmpty .appDashboard-linkedResourcesEmpty-link a {
+    text-transform: uppercase;
+    color: #323232;
+}
+.appDashboard-linkedResourcesEmpty .appDashboard-linkedResourcesEmpty-link a img {
+    vertical-align: bottom;
+    padding-left: 8px;
+}
+.app-alert {
+    width: 30em;
+}
+.app-confirm {
+    width: 35em;
+}
+.ignore {
+}
+.linkResource .aux-glanceLabel {
+    font-family: "Segoe UI", Arial;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.linkResource label {
+    clear: both;
+    display: block;
+    color: gray;
+    margin-bottom: 0;
+    margin-top: .2em;
+}
+.linkResource label.error {
+    display: block;
+    color: red;
+}
+.linkResource .defaultValue {
+    font-style: italic;
+}
+.linkResource ul.actions {
+    margin-top: 25px;
+}
+.linkResource .actions li, .linkResource .titleheader {
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+.linkResource .actions li {
+    list-style: none;
+    text-transform: none;
+    margin-bottom: 8px;
+}
+.linkResource .actions li:hover {
+    cursor: pointer;
+}
+.linkResource .actions li[aria-disabled=true] {
+    cursor: default;
+}
+.linkResource .actions li a, .linkResource .actions li a:visited {
+    display: block;
+    background: transparent url(//az213233.vo.msecnd.net/Content/images/icon-submit-24-g-idl.png) no-repeat 0 50%;
+    padding-left: 33px;
+    font-size: 17px;
+    text-decoration: none;
+    color: #434343;
+    height: 28px;
+    line-height: 27px;
+}
+.linkResource .actions li a:hover {
+    background: transparent url(//az213233.vo.msecnd.net/Content/images/icon-submit-24-g-hvr.png) no-repeat 0 50%}
+.linkResource .actions li[aria-disabled=true] a {
+    cursor: default;
+    color: #9e9e9e;
+    background: transparent url(//az213233.vo.msecnd.net/Content/images/icon-submit-24-g-dis.png) no-repeat 0 50%}
+.linkResource p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.linkResource p.aux-dialogText {
+    font-size: 14px!important;
+    line-height: 21px;
+    color: #434343;
+}
+.linkResource .inputsteptitle {
+    padding-left: 4px;
+}
+.linkResource input {
+    width: 24.8em;
+}
+.linkResource select {
+    width: 27.5em;
+}
+.linkResource .columns input {
+    width: 12em;
+}
+.linkResource {
+    color: #939393;
+}
+.sql-scale-control {
+    margin-top: 2px;
+    float: left;
+}
+.sql-scale-control.edition {
+    margin-right: 50px;
+}
+.sql-scale-control.size {
+    line-height: 34px;
+}
+.ignore {
+}
+.sql-create .aux-glanceLabel {
+    font-family: "Segoe UI", Arial;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.sql-create label {
+    clear: both;
+    display: block;
+    margin-bottom: 0;
+    margin-bottom: 5px;
+}
+.sql-create form {
+    min-width: 350px;
+}
+.sql-create label.error {
+    display: block;
+    color: red;
+}
+.sql-create .defaultValue {
+    font-style: italic;
+}
+.sql-create ul {
+    margin-top: 1em;
+}
+.sql-create .titleheader {
+    text-transform: uppercase;
+    font-family: Arial;
+    font-weight: bold;
+    color: #000;
+    font-size: 1.2em;
+}
+.sql-create .fx-radio.pushbutton li {
+    line-height: 10px;
+}
+.sql-create li {
+    margin-top: 1.4em;
+    list-style: disc;
+}
+.fx-radio li {
+    margin: 0;
+    list-style: none;
+}
+.sql-create li:hover {
+    cursor: pointer;
+}
+.sql-create p {
+    margin-top: 5px!important;
+    margin-bottom: 5px!important;
+}
+.sql-create .subheader {
+    font-family: Segoe UI Light;
+    font-size: 2em;
+    margin-top: 20px;
+    color: #000;
+}
+.sql-create .inputsteptitle {
+    padding-left: 4px;
+}
+.sql-create input {
+    margin-bottom: 1em;
+}
+.sql-create .columns input, .sql-quick-create .columns input {
+    width: 12em;
+}
+.sql-quick-create.sql-quick-create-with-new-server .new-server {
+    display: block;
+}
+.sql-quick-create.sql-quick-create-with-new-server .drawer-form-item {
+    margin-top: 10px;
+}
+.sql-quick-create .new-server, #serverInfoForm .sqlAzureExtension-subscription-container {
+    display: none;
+}
+.sql-create-server-progress {
+    position: absolute;
+    top: 5px;
+    left: 110px;
+    display: none;
+}
+.sql-create-server-progress-quickcreate {
+    top: 10px;
+    left: 110px;
+}
+#sqlAzureExtensionServerAccessOption {
+    margin-top: 5px;
+}
+.aux-dialog-item .checkbox-text {
+    margin-left: 2px;
+}
+.sqlcommon select, .sqlcommon input {
+    margin-bottom: 6px;
+}
+.sqlcommon input {
+    width: 430px;
+    border: 1px solid #bfbfbf;
+    background-color: #fff;
+    padding: 4px;
+}
+.sqlcommon .error {
+    color: red;
+    margin-bottom: 6px;
+}
+.sql-dashboard-statusTitle {
+    margin-top: 50px;
+}
+.sql-dashboard-usageTitle {
+    margin-top: 0;
+}
+.sql-dashboard-monitor {
+    background: url(//az213233.vo.msecnd.net/Content/SqlAzure/Images/MonitorPlaceHolder.png) no-repeat;
+    height: 206px;
+}
+.sqlScaleConfigGroup {
+    margin-top: 20px;
+}
+.sqlScaleConfigGroup {
+    margin-top: 20px;
+}
+.sqlScaleConfigGroup .aux-glanceLabel {
+    padding-left: 0;
+    margin-bottom: 10px;
+}
+.sqlScaleEdition {
+    width: 150px;
+}
+.sqlScaleSelectOption {
+    width: 125px;
+}
+.sqlConnectionStrings p {
+    word-wrap: break-word;
+}
+.sqlConnectionStrings .title {
+    display: inline-block;
+}
+.sqlConnectionStrings a {
+    color: #4f9dd7;
+}
+.sqlConnectionStrings a:hover {
+    cursor: pointer;
+}
+.sqlConnectionStrings .waz-config-help-balloon {
+    margin-left: 3px;
+}
+.sqlConnectionStrings .aux-dialogText {
+    border-width: 1px;
+    border-color: #bbbddf;
+    border-style: solid;
+    padding: 2px 2px 8px 2px;
+    background-color: #f3f3f3;
+    overflow: auto;
+    width: 100%;
+    resize: none;
+}
+.sql-quick-start p.clear {
+    clear: both;
+}
+.sql-quick-start .sql-quick-start-button {
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin: 15px;
+}
+.sql-congifure-clientip {
+    display: none;
+}
+.sql-database-quickStart .quickstart-publishapp, .sql-server-quickStart .quickstart-publishapp, .sql-database-quickStart .quickstart-sourcecontrol, .sql-server-quickStart .quickstart-sourcecontrol {
+    display: none;
+}
+.sql-database-quickStart.quickStarttab .quickStartHeader .quickstart-graphic, .sql-server-quickStart.quickStarttab .quickStartHeader .quickstart-graphic {
+    bottom: 30px;
+}
+.quickStarttab {
+    display: block;
+}
+.quickStarttab h2 {
+    font-size: 32px;
+    margin-bottom: 6px;
+    margin-top: 26px;
+}
+.quickStarttab .quickStartHeader {
+    position: relative;
+    border-top: 1px solid #bbbdbf;
+    border-bottom: 1px solid #bbbdbf;
+    background-color: #f4f4f4;
+    padding-bottom: 30px;
+}
+.quickStarttab .quickStartHeader .quickstart-graphic {
+    max-width: 200px;
+    position: absolute;
+    bottom: 0;
+}
+.quickStarttab .quickStartHeader .description {
+    margin-left: 230px;
+}
+.quickStarttab .quickStartHeader .description .headersubtext {
+    font-family: "Segoe UI Light";
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.quickStarttab .quickStartHeader .description .quickstartCheckboxText {
+    font-family: "Segoe UI Light";
+    font-size: 14px;
+    margin-top: 0;
+}
+.quickStarttab .clearfix:after {
+    clear: both;
+    display: block;
+    content: " ";
+    height: 0;
+    visibility: hidden;
+}
+.quickStarttab .steps {
+    margin: 40px 0;
+    list-style: none;
+}
+.quickStarttab .steps li {
+    padding: 4px 16px 4px 54px;
+    background-repeat: no-repeat;
+    background-position: 0 50%}
+.quickStarttab .steps .quickstart-gettools {
+    background-image: url(//az213233.vo.msecnd.net/Content/images/quickstart_deploytools.png);
+}
+.quickStarttab .steps .quickstart-publishapp {
+    background-image: url(//az213233.vo.msecnd.net/Content/images/quickstart_publishapp.png);
+}
+.quickStarttab .steps .quickstart-sourcecontrol {
+    background-image: url(//az213233.vo.msecnd.net/Content/images/quickstart_sourcecontrol.png);
+}
+.quickStarttab .steps li .detail {
+    border-left: 2px solid #e5e5e5;
+    padding: 4px 16px;
+}
+.quickStarttab .steps li .detail .detailTitle {
+    font-size: 22px;
+    margin: 4px 0;
+}
+.quickStarttab .steps li .detail .detailDescription {
+    font-size: 14px;
+    color: #2086bf;
+    margin: 4px 0;
+}
+.quickStarttab .steps li .detail .detailDescription a {
+    font-size: 14px;
+    color: #2086bf;
+    margin: 4px 30px 0 0;
+}
+.quickStarttab .steps li .detail .detailDescription a[aria-disabled=true] {
+    color: #9e9e9e;
+    cursor: default;
+    text-decoration: none;
+}
+.quickStarttab .steps pre {
+    font-family: Consolas, "Monaco";
+    font-size: 12px;
+    color: #434343;
+    background-color: #f3f3f3;
+    padding: 1.5em 1.5em;
+    margin: 12px 0 4px 0;
+    word-wrap: break-word;
+}
+.ignore {
+}
+.mysql-eula {
+    width: 25em;
+}
+.websites-config-noconnectionStrings {
+    padding-top: 10px;
+    font-size: 11px;
+    text-transform: uppercase;
+    float: left;
+    font-family: Segoe UI Semibold;
+}
+.marketplace-mysql-container .mysql-eula {
+    margin-top: 300px;
+}
+.customCreate-mysql-container .mysql-eula {
+    margin-top: 130px;
+}
+.uploadPackage-mysql-container .mysql-eula {
+    margin-top: 130px;
+}
+.ws-spending-limit-warning {
+    color: #333;
+    background-color: #e2e3e5;
+    padding: 20px;
+    border-left: 5px solid #e49937;
+}
+.ws-spending-limit-warning-icon {
+    margin-right: 2px;
+    vertical-align: middle;
+}
+.ws-spending-limit-warning-title {
+    margin-bottom: 15px;
+}
+.ws-spending-limit-warning-titletext {
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.ws-spending-limit-warning-message {
+    margin-bottom: 15px;
+}
+.websites-connectionStrings-dialog {
+    height: 210px;
+    width: 100%}
+#connectionStrings-dialog-scrollable {
+    height: 260px;
+    overflow-y: auto;
+}
+#connectionStrings-dialog-scrollable .connectionStrings-dialog-list {
+    padding-right: 10px;
+}
+#connectionStrings-dialog-scrollable .connectionStrings-dialog-list-item {
+    margin-bottom: 20px;
+}
+#connectionStrings-dialog-scrollable .connectionStrings-dialog-list-item div {
+    border: 1px solid #7f7f7f;
+    min-height: 50px;
+    padding: 10px 3px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+.ignore {
+}
+.app-publish .columns input {
+    width: 12em;
+}
+.ignore {
+}
+.app-upload {
+    width: 40em;
+}
+.app-upload .packageUploadLabel {
+    font-weight: bold;
+    font-size: .9em;
+    text-transform: uppercase;
+}
+.app-upload label.error {
+    display: block;
+    color: red;
+}
+.app-upload .app-file-browse {
+    width: 8em;
+    margin-left: 5px;
+}
+.app-upload .app-file-input {
+    width: 15em;
+    height: 18px;
+    border: 1px solid grey;
+}
+.ui-widget-content .app-upload a {
+    color: blue;
+}
+#parametersForm {
+    overflow-x: auto;
+    overflow-y: auto;
+    height: 24em;
+}
+.parameter-name {
+    font-size: small;
+}
+.parameter-description {
+    font-size: x-small;
+}
+.parameter-value {
+}
+.deployment-history .deployment-history-header {
+    margin-top: 10px;
+}
+.deployment-history .deployment-history-header>.header {
+    color: #323232;
+    font-size: 24px;
+    font-family: "Segoe UI Light"}
+.deployment-history .deployment-history-header>span.repository-link-section {
+    float: right;
+    margin-top: 5px;
+}
+.repository-link-section {
+    width: 400px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+}
+.repository-link-section label {
+    font-family: "Segoe UI Semibold";
+    text-transform: uppercase;
+    color: #525252;
+}
+.repository-link-section span {
+    vertical-align: middle;
+}
+.repository-link-section .repository-link-container {
+    border: 1px dashed #bcbcbc;
+    font-family: Consolas, "Monaco";
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 310px;
+}
+.history {
+    margin-top: 10px;
+}
+.history .deployment {
+    margin-bottom: 5px;
+}
+.deployment {
+    height: 105px;
+    border-left: 5px solid transparent;
+}
+.deployment .truncate {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+}
+.aux-dialogSubHeader .truncate {
+    display: inline-block;
+    width: 800px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+}
+.deployment:hover {
+    background-color: #f1f1f1;
+}
+.deployment .log {
+    display: none;
+}
+.deployment .chevron-img {
+    display: none;
+}
+.deployment .actions {
+    height: 67px;
+    width: 140px;
+    margin: 38px 0 0 0;
+    position: relative;
+}
+.deployment .actions.disabled {
+    color: #dfdfdf;
+}
+.deployment .status-text {
+    font-family: "Segoe UI Semibold";
+    margin-right: 5px;
+    font-size: 14px;
+    text-transform: capitalize;
+    display: none;
+}
+.deployment .date {
+    font-size: 18px;
+    color: #434343;
+}
+.deployment .repo-img {
+    float: left;
+    height: 65px;
+    width: 65px;
+    margin: 20px;
+    margin-left: 15px;
+}
+.deployment .details {
+    padding: 15px 30px 0;
+}
+.deployment .details .header {
+    margin-bottom: 6px;
+}
+.deployment .details .header .status-img {
+    vertical-align: middle;
+    margin-right: 2px;
+}
+.deployment .details .header .status-img img {
+    width: 17px;
+    height: 17px;
+}
+.deployment .details .header .chevron-img {
+    vertical-align: top;
+    float: right;
+}
+.deployment:hover .chevron-img, .deployment.selected .chevron-img {
+    display: inline;
+}
+.deployment .details .header .chevron-img:hover {
+    cursor: pointer;
+}
+.deployment .details .message {
+    font-size: 13px;
+    font-family: "Segoe UI Semibold";
+    color: #525252;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.deployment .details .message span.truncate {
+    float: left;
+    width: 100%}
+.deployment .details .footer {
+    overflow: hidden;
+    font-size: 12px;
+}
+.deployment .details .footer>div {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+}
+.deployment .details .footer>div.commit {
+    float: left;
+    width: 140px;
+}
+.deployment .details .footer>div.author {
+    float: left;
+    max-width: 35%;
+    margin-right: 20px;
+}
+.deployment .details .footer>div label {
+    font-family: "Segoe UI Semibold";
+    text-transform: capitalize;
+    color: #525252;
+}
+.deployment .details .footer>div span {
+    margin-left: 6px;
+    color: #434343;
+    font-size: 12px;
+}
+.deployment.failed .state {
+    background-color: #e40000;
+    width: 6px;
+}
+.deployment.failed .status-text {
+    color: #e40000;
+    display: inline;
+}
+.deployment.deploying {
+    cursor: default;
+}
+.deployment.deploying .details .message .text {
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 230px;
+}
+.deployment.deploying .status-text {
+    color: #74b0cc;
+    display: inline;
+}
+.deployment.current .status-text {
+    color: #77bf2e;
+    display: inline;
+}
+.deployment .state {
+    width: 6px;
+}
+.deployment.current .state {
+    background-color: #77bf2e;
+    width: 6px;
+}
+.deployment.current .actions .deploy {
+    display: none;
+}
+.deployments.disabled .actions a {
+    cursor: default;
+}
+.deployment .actions a .icon {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+}
+.deployment .actions a .text {
+    top: 35px;
+    position: relative;
+    width: 80px;
+    color: #434343;
+}
+.deployments.disabled .actions a .text, .deployments.disabled .actions a:hover .text {
+    color: #bdbebd;
+}
+.deployment .actions a:hover {
+    text-decoration: none;
+}
+.deployment .actions a:hover .text {
+    color: #2086bf;
+}
+.deployment .actions .deploy .icon {
+    background: url(//az213233.vo.msecnd.net/Content/Websites/Images/icon-redeploy-32-g-idl.png) no-repeat;
+    margin-left: 8px;
+}
+.deployment .actions .deploy:hover .icon {
+    background: url(//az213233.vo.msecnd.net/Content/Websites/Images/icon-redeploy-32-g-hvr.png) no-repeat;
+}
+.deployments.disabled .actions .deploy .icon {
+    background: url(//az213233.vo.msecnd.net/Content/Websites/Images/icon-redeploy-32-g-dis.png) no-repeat;
+}
+.deployment .actions .retry .icon {
+    background: url(//az213233.vo.msecnd.net/Content/Websites/Images/icon-refresh-32-g-idl.png) no-repeat;
+}
+.deployment .actions .retry:hover .icon {
+    background: url(//az213233.vo.msecnd.net/Content/Websites/Images/icon-refresh-32-g-hvr.png) no-repeat;
+}
+.deployments.disabled .actions .retry .icon {
+    background: url(//az213233.vo.msecnd.net/Content/Websites/Images/icon-refresh-32-g-dis.png) no-repeat;
+}
+.deployment .actions .dismiss {
+    padding-left: 25px;
+}
+.deployment .actions .dismiss .icon {
+    background: url(//az213233.vo.msecnd.net/Content/Websites/Images/icon-cancel-32-g-idl.png) no-repeat;
+    margin-left: 4px;
+}
+.deployment .actions .dismiss:hover .icon {
+    background: url(//az213233.vo.msecnd.net/Content/Websites/Images/icon-cancel-32-g-hvr.png) no-repeat;
+}
+.deployments.disabled .actions .dismiss .icon {
+    background: url(//az213233.vo.msecnd.net/Content/Websites/Images/icon-cancel-32-g-dis.png) no-repeat;
+}
+.deployment.selected {
+    background-color: #f1f1f1;
+    border-left: 5px solid #4f9dd7;
+}
+.deployment.selected.expanded {
+    height: 100%;
+    background-color: #f1f1f1;
+    border-left: 5px solid #4f9dd7;
+}
+.deployment.selected.expanded .log {
+    clear: left;
+    display: block;
+    margin-right: 5px;
+    background-color: #f1f1f1;
+    height: 100%;
+    overflow: auto;
+    font-size: 12px;
+    color: #585858;
+    padding: 0 15px 5px 15px;
+}
+.deployment.selected.expanded .log>div {
+    height: 10px;
+    padding: 10px 0 10px 0;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #cecece;
+}
+.deployment.selected.expanded .log>div:first-child {
+    border-top: 2px solid #cecece;
+}
+.deployment.selected.expanded .log>div.last-child {
+    border-bottom: 0 solid #cecece;
+}
+.deployment.selected.expanded .log .entry .type {
+    margin-left: 20px;
+}
+.deployment.selected.expanded .log .entry .type .success {
+    background: url(//az213233.vo.msecnd.net/Content/Websites/Images/entry_check.gif) no-repeat;
+    height: 16px;
+    width: 16px;
+}
+.deployment.selected.expanded .log .entry .type .fail {
+    background: url(//az213233.vo.msecnd.net/Content/Websites/Images/entry_failed.gif) no-repeat;
+    height: 16px;
+    width: 16px;
+}
+.deployment.selected.expanded .log .entry .time {
+    width: 100px;
+    margin-left: 50px;
+}
+.deployment.selected.expanded .log .entry .message {
+    width: 58%;
+    white-space: nowrap;
+    margin-right: 10px;
+}
+.deployment.selected.expanded .log .entry div.viewLog {
+    float: right;
+    margin-right: 20px;
+}
+.log-detail pre.content {
+    display: inline;
+    white-space: pre-wrap;
+}
+.deployments .lastUpdateTime {
+    margin-top: 20px;
+    color: #aaa;
+}
+.deploy-setup {
+    font-family: "Segoe UI", Arial, Helvetica, Sans-Serif;
+}
+.deploy-setup h2 {
+    margin-top: 0;
+    font-weight: normal;
+}
+.deploy-setup .notsetup .header {
+    font-size: 24px;
+    margin-bottom: 6px;
+    margin-top: 20px;
+}
+.deploy-setup .notsetup .headersubtext {
+    font-family: "Segoe UI Light", Arial, Helvetica, Sans-Serif;
+    font-size: 18px;
+    margin-top: 0;
+}
+.deploy-setup .instructions {
+    border-top: 1px solid #bbbdbf;
+    border-bottom: 1px solid #bbbdbf;
+    background-color: #f4f4f4;
+    height: 180px;
+    padding-bottom: 0;
+    margin-bottom: 30px;
+}
+.deploy-setup .instructions .graphic {
+    margin: 30px;
+}
+.deploy-setup .instructions .description {
+    margin-right: 30px;
+    float: none;
+}
+.deploy-setup .instructions .description .header {
+    font-size: 32px;
+    margin-bottom: 6px;
+    margin-top: 26px;
+}
+.deploy-setup .instructions .description .headersubtext {
+    font-family: "Segoe UI Light", Arial, Helvetica, Sans-Serif;
+    font-size: 24px;
+    margin-top: 0;
+}
+.deploy-setup .repository-link-section {
+    margin-top: 10px;
+}
+.deploy-setup .deploy-setup-sectionheader {
+    font-family: "Segoe UI Semibold", Arial, Helvetica, Sans-Serif;
+    font-size: 14px;
+    color: #a5a5a5;
+    text-transform: uppercase;
+    margin-top: 24px;
+}
+.deploy-setup .steps ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.deploy-setup .stepstitle a {
+    text-decoration: none;
+    color: #323232;
+    font-size: 18px;
+    margin: 1em 0;
+    display: block;
+}
+.deploy-setup .stepstitle a:hover {
+    text-decoration: none;
+}
+.deploy-setup .steps-arrow {
+    padding: 0 18px;
+}
+.deploy-setup .steps-arrow-collapsed {
+    background: url(//az213233.vo.msecnd.net/Content/Websites/Images/deploy_chevronright.gif) no-repeat 4px 55%}
+.deploy-setup .steps-arrow-expanded {
+    background: url(//az213233.vo.msecnd.net/Content/Websites/Images/deploy_chevrondown.gif) no-repeat 0 60%}
+.deploy-setup .steps-collapsed {
+    display: none;
+}
+.deploy-setup .steps-expanded {
+    display: inherit;
+}
+.deploy-setup .steps {
+    margin: 20px 0;
+}
+.deploy-setup .steps .step {
+    margin: 20px 0;
+}
+.deploy-setup .steps .step .number {
+    font-family: "Segoe UI Light", Arial, Helvetica, Sans-Serif;
+    font-size: 48px;
+    color: #c1c1c1;
+    font-size: 48px;
+    padding: 0 12px;
+}
+.deploy-setup .steps .step .detail {
+    border-left: 2px solid #e5e5e5;
+    width: 80%;
+    padding: 4px 16px;
+}
+.deploy-setup .steps .step .detail .detailtitle {
+    font-size: 22px;
+    margin: 4px 0;
+}
+.deploy-setup .steps .step .detail .detaildesc {
+    font-size: 14px;
+    color: #6f6f6f;
+    margin: 4px 0;
+}
+.deploy-setup .steps pre {
+    font-family: Consolas, "Monaco";
+    font-size: 12px;
+    color: #434343;
+    background-color: #f3f3f3;
+    padding: 1.5em 1.5em;
+    margin: 12px 0 4px 0;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+.app-deployment {
+}
+.scm-bold {
+    font-family: "Segoe UI Semibold", Arial, Helvetica, Sans-Serif;
+}
+.scm-temporary-hide-deployment-tab {
+    display: none;
+}
+.float-all>div {
+    float: left;
+}
+.clear {
+    clear: both;
+}
+.bold {
+    font-weight: bold;
+}
+.small-text {
+    font-size: small;
+}
+.clearfix:after {
+    clear: both;
+    display: block;
+    content: " ";
+    height: 0;
+    visibility: hidden;
+}
+.clearfix {
+    display: inline-block;
+}
+* html .clearfix {
+    height: 1%}
+.clearfix {
+    display: block;
+}
+li.clearfix {
+    display: list-item;
+}
+.linkTfs a.tfs_authorize:hover {
+    background: transparent url(//az213233.vo.msecnd.net/Content/Images/icon-next-20-g-hvr.png) no-repeat 0 50%}
+.linkTfs a.tfs_authorize {
+    background: transparent url(//az213233.vo.msecnd.net/Content/Images/icon-next-20-g-idl.png) no-repeat 0 50%;
+    padding: 3px 0 3px 24px;
+    margin-left: 20px;
+    line-height: 28px;
+}
+.linkTfs .linktfsballoonhelp {
+    margin-left: 8px;
+}
+.linkTfs .optionHeader {
+    font-size: 22px!important;
+}
+.linkTfs .noprojerrorimg {
+    padding-right: 4px;
+    float: left;
+}
+.linkTfs #tfsAccnt {
+    width: 100px;
+    padding-left: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+.linkTfs .noProjectMsg {
+    display: none;
+}
+.ignore {
+}
+.sql-create .aux-glanceLabel {
+    font-family: "Segoe UI", Arial;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.sql-create label {
+    clear: both;
+    display: block;
+    margin-bottom: 0;
+    margin-bottom: 5px;
+}
+.sql-create form {
+    min-width: 350px;
+}
+.sql-create label.error {
+    display: block;
+    color: red;
+}
+.sql-create .defaultValue {
+    font-style: italic;
+}
+.sql-create ul {
+    margin-top: 1em;
+}
+.sql-create .titleheader {
+    text-transform: uppercase;
+    font-family: Arial;
+    font-weight: bold;
+    color: #000;
+    font-size: 1.2em;
+}
+.sql-create .fx-radio.pushbutton li {
+    line-height: 10px;
+}
+.sql-create li {
+    margin-top: 1.4em;
+    list-style: disc;
+}
+.fx-radio li {
+    margin: 0;
+    list-style: none;
+}
+.sql-create li:hover {
+    cursor: pointer;
+}
+.sql-create p {
+    margin-top: 5px!important;
+    margin-bottom: 5px!important;
+}
+.sql-create .subheader {
+    font-family: Segoe UI Light;
+    font-size: 2em;
+    margin-top: 20px;
+    color: #000;
+}
+.sql-create .inputsteptitle {
+    padding-left: 4px;
+}
+.sql-create input {
+    margin-bottom: 1em;
+}
+.sql-create .columns input, .sql-quick-create .columns input {
+    width: 12em;
+}
+.sql-quick-create.sql-quick-create-with-new-server .new-server {
+    display: block;
+}
+.sql-quick-create.sql-quick-create-with-new-server .drawer-form-item {
+    margin-top: 10px;
+}
+.sql-quick-create .new-server, #serverInfoForm .sqlAzureExtension-subscription-container {
+    display: none;
+}
+.sql-create-server-progress {
+    position: absolute;
+    top: 5px;
+    left: 110px;
+    display: none;
+}
+.sql-create-server-progress-quickcreate {
+    top: 10px;
+    left: 110px;
+}
+#sqlAzureExtensionServerAccessOption {
+    margin-top: 5px;
+}
+.aux-dialog-item .checkbox-text {
+    margin-left: 2px;
+}
+.marketplace-wa-gallery {
+    width: 888px;
+    height: 465px;
+    margin-left: -30px;
+    overflow: hidden;
+}
+.marketplace-wa-gallery-header-container {
+    width: 100%}
+.marketplace-wa-gallery h1 {
+    color: #999;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 15px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.marketplace-wa-gallery h2 {
+    color: #434343;
+    display: inline-block;
+    font-size: 30px;
+    margin: 0;
+    text-transform: none;
+    font-family: "Segoe UI";
+    font-weight: lighter;
+}
+.marketplace-wa-left {
+    float: left;
+}
+.marketplace-wa-right {
+    float: right;
+}
+.marketplace-wa-hidden {
+    display: none;
+}
+.marketplace-wa-gallery-loading-progress-indicator {
+    height: 450px;
+    width: 918px;
+    background: url(//az213233.vo.msecnd.net/Content/Images/spinner-lg.gif) no-repeat center center;
+}
+.marketplace-wa-gallery-catalog-error {
+    left: 95px;
+    position: relative;
+    top: 170px;
+}
+.marketplace-wa-gallery-catalog-error p {
+    color: #505050;
+    font-family: "Segoe UI Light";
+    font-size: 20px;
+}
+.marketplace-wa-gallery-filtering-progress-indicator {
+    height: 450px;
+    width: 660px;
+    float: right;
+    background: url(//az213233.vo.msecnd.net/Content/Images/spinner-md.gif) no-repeat center center;
+}
+.marketplace-wa-gallery-filtering-error {
+    position: relative;
+    top: 185px;
+    left: 200px;
+    width: 680px;
+}
+.marketplace-wa-gallery-filtering-error p.marketplace-wa-gallery-filtering-errorline1, .marketplace-wa-gallery-filtering-error p.marketplace-wa-gallery-filtering-errorline2 {
+    color: #505050;
+    font-family: "Segoe UI Light";
+    font-size: 20px;
+    margin: 0;
+    position: relative;
+    left: -50px;
+}
+.marketplace-wa-gallery-searchbox-container {
+    float: right;
+    height: 40px;
+}
+.marketplace-wa-gallery-searchbox-wrapper {
+    padding-top: 12px;
+    display: none;
+}
+.marketplace-wa-gallery-categories {
+    height: 465px;
+    width: 200px;
+    float: left;
+    border-right: 1px solid #cdcdcd;
+    text-transform: uppercase;
+}
+ul.marketplace-wa-gallery-categories-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul.marketplace-wa-gallery-categories-list li {
+    font-family: "Segoe UI Semibold";
+    font-size: 12px;
+    line-height: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    cursor: pointer;
+}
+ul.marketplace-wa-gallery-categories-list li:hover {
+    color: #4f9dd7;
+}
+ul.marketplace-wa-gallery-categories-list li.marketplace-wa-gallery-category-selected {
+    padding-left: 25px;
+    border-left: 5px solid #4f9dd7;
+    color: #4f9dd7;
+}
+.marketplace-wa-gallery-products-container {
+    height: 465px;
+    width: 687px;
+    float: right;
+}
+.marketplace-wa-products-list-container {
+    height: 465px;
+    width: 300px;
+    float: left;
+    padding: 0;
+    border-right: 1px solid #cdcdcd;
+}
+.marketplace-wa-gallery-sort-header {
+    font-family: "Segoe UI Semibold";
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    padding-left: 30px;
+}
+.marketplace-wa-gallery-scrollable-products {
+    height: 438px;
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+}
+ul.marketplace-wa-gallery-products-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul.marketplace-wa-gallery-products-list li {
+    font-size: 14px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 25px;
+    cursor: pointer;
+    height: 60px;
+}
+ul.marketplace-wa-gallery-products-list li div {
+    height: 48px;
+    vertical-align: middle;
+    line-height: 48px;
+    padding-top: 4px;
+}
+ul.marketplace-wa-gallery-products-list li:hover {
+    background-color: #e6e6e6;
+}
+ul.marketplace-wa-gallery-products-list li div span {
+    vertical-align: middle;
+}
+ul.marketplace-wa-gallery-products-list li div img {
+    vertical-align: middle;
+    padding-right: 8px;
+}
+ul.marketplace-wa-gallery-products-list li.marketplace-wa-gallery-product-selected {
+    background-color: #ececec;
+    border-left: 5px solid #4f9dd7;
+    padding-left: 20px;
+}
+ul.marketplace-wa-gallery-products-list li.marketplace-wa-gallery-product-selected:hover {
+    background-color: #ececec;
+    border-left: 5px solid #4f9dd7;
+    padding-left: 20px;
+}
+.marketplace-wa-gallery-product-details {
+    height: 465px;
+    width: 343px;
+    float: right;
+    padding-left: 16px;
+    padding-right: 8px;
+}
+.marketplace-wa-gallery-product-details-header {
+    margin-bottom: 3px;
+}
+.marketplace-wa-gallery-product-details-header img, .marketplace-wa-gallery-product-details-header span {
+    vertical-align: middle;
+}
+.marketplace-wa-gallery-product-details-header span {
+    font-size: 18px;
+    margin-left: 8px;
+}
+.marketplace-wa-gallery-product-detail-properties div {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.marketplace-wa-gallery-product-detail-property-name {
+    width: 120px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: "Segoe UI Semibold";
+    font-size: 11px;
+}
+.marketplace-wa-gallery-product-detail-property-value {
+    width: 120px;
+    display: inline-block;
+}
+.marketplace-wa-gallery-product-details p {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.marketplace-wa-properties-form {
+    height: 465px;
+    width: 479px;
+    margin-left: 30px;
+    float: left;
+    border-right: 1px solid #cdcdcd;
+}
+.marketplace-wa-properties-form h3 {
+    font-family: "Segoe UI Semibold";
+    font-size: 15px;
+}
+.marketplace-wa-properties-form h3:first-child {
+    margin-top: 0;
+}
+.marketplace-wa-properties-form-scroller {
+    height: 80%;
+    overflow: auto;
+}
+.marketplace-wa-properties-form label {
+    margin-bottom: 5px;
+    font-family: "Segoe UI Semibold";
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #535353;
+}
+.marketplace-wa-properties-form-entry {
+    padding-bottom: 3px;
+}
+.marketplace-wa-properties-form-entry label {
+    display: block;
+}
+.marketplace-wa-properties-dnssuffix-label {
+    width: 300px;
+    text-align: right;
+}
+input.marketplace-wa-properties-dnssuffix-input {
+    margin-bottom: 0;
+}
+.marketplace-wa-properties-form-entry input[type="text"] {
+    width: 290px;
+    padding: 4px;
+    color: #535353;
+    font-size: 13px;
+    border: 1px solid #b2b2b2;
+}
+.marketplace-wa-properties-form-entry select {
+    width: 300px;
+    padding: 4px;
+    color: #535353;
+    font-size: 13px;
+    border: 1px solid #b2b2b2;
+}
+.marketplace-wa-properties-form-password-container {
+    height: 67px;
+    padding-bottom: 16px;
+}
+.marketplace-wa-properties-form-password-container label {
+    padding-top: 8px;
+}
+.marketplace-wa-properties-form-password-editboxes {
+    width: 298px;
+}
+.marketplace-wa-properties-form-password-entry {
+    width: 140px;
+}
+.marketplace-wa-properties-form-password-entry label {
+    display: block;
+}
+.marketplace-wa-properties-form-password-entry input[type="password"] {
+    width: 131px;
+    padding: 4px;
+    color: #535353;
+    font-size: 13px;
+    border: 1px solid #b2b2b2;
+}
+.marketplace-wa-properties-form .type-url span {
+    font-size: 14px;
+    color: #737373;
+    margin-left: 3px;
+}
+.marketplace-wa-properties-product-description {
+    height: 100%;
+    width: 343px;
+    float: right;
+    padding-left: 16px;
+}
+#marketplace-wa-parameters-form {
+    height: 100%}
+.marketplace-wa-gallery-product-short-desc {
+    font-size: 13px;
+    line-height: 21px;
+}
+.marketplace-wa-database-step {
+    height: 600px;
+}
+.marketplace-wa-database-subheader {
+    color: #505050;
+    font-family: "Segoe UI Light";
+    font-size: 31px;
+    margin-top: 10px;
+    margin-bottom: 23px;
+    margin-left: 30px;
+}
+.marketplace-wa-database-properties-form {
+    height: 465px;
+    width: 479px;
+    margin-left: 30px;
+    float: left;
+    border-right: 1px solid #cdcdcd;
+}
+.marketplace-wa-database-properties-form h3 {
+    font-family: "Segoe UI Semibold";
+    font-size: 15px;
+}
+.marketplace-wa-database-properties-form h3:first-child {
+    margin-top: 0;
+}
+.marketplace-database-radio-container {
+    padding-bottom: 16px;
+}
+.marketplace-database-radio-container label {
+    text-transform: none;
+    display: inline;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+.marketplace-database-radio-container input[type="radio"] {
+    width: 16px;
+}
+.marketplace-wa-database-properties-form-scroller {
+    height: 465px;
+}
+.marketplace-wa-properties-form-password-container label, .marketplace-wa-existing-database label, .marketplace-wa-new-database label {
+    margin-bottom: 5px;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #535353;
+}
+.marketplace-sqlservers-radio-container {
+    padding-bottom: 16px;
+}
+.marketplace-sqlservers-radio-container label {
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: none;
+    color: #000;
+}
+.marketplace-sqlservers-radio-container input[type="radio"] {
+    width: 16px;
+}
+.marketplace-wa-database-product-description {
+    height: 465px;
+    width: 343px;
+    float: right;
+    padding-left: 16px;
+}
+.marketplace-wa-properties-form .app-eula {
+    height: 20%;
+    overflow: auto;
+}
+.ignore {
+}
+.app-upload {
+    width: 40em;
+}
+.app-upload .certUploadLabel {
+    font-weight: bold;
+    font-size: .9em;
+    text-transform: uppercase;
+}
+.app-upload .app-file-browse {
+    width: 8em;
+    margin-left: 5px;
+}
+.app-upload .app-file-input {
+    width: 15em;
+    height: 18px;
+    border: 1px solid grey;
+}
+.ui-widget-content .app-upload a {
+    color: blue;
+}
+.app-publish .add-cert {
+    width: 260px;
+    float: left;
+    padding-right: 25px;
+    border-right: 1px solid #cbcbcb;
+}
+.app-publish .add-cert input {
+    width: 100%}
+.app-publish .add-cert button {
+    margin-top: 20px;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    text-transform: lowercase;
+    color: #fff;
+    background-color: #8ab646;
+    border: none;
+}
+.app-publish .add-cert button[disabled] {
+    color: inherit;
+    background-color: #a7b590;
+}
+.app-publish .cert-list {
+    width: 200px;
+    height: 220px;
+    float: left;
+    margin-left: 25px;
+}
+.app-publish .file {
+    width: 480px;
+}
+.app-publish input[type=text] {
+    width: 480px;
+}
+.app-publish .cert-list ul {
+    margin-left: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+.app-publish .cert-list li {
+    padding-left: 22px;
+    background-image: url(//az213233.vo.msecnd.net/Content/Images/icon-cert-add-17.png);
+    background-repeat: no-repeat;
+    height: 17px;
+    margin-bottom: 6px;
+    cursor: default;
+}
+.app-publish .cert-list li:hover {
+    background-image: url(//az213233.vo.msecnd.net/Content/Images/icon-cert-delete-17.png);
+}
+.hs-swap {
+    float: left;
+}
+.hs-swap h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.hs-swap dl {
+    overflow: hidden;
+}
+.hs-swap dt {
+    float: left;
+    clear: left;
+    font-weight: bold;
+    margin-top: 3px;
+}
+.hs-swap dd {
+    margin-left: 80px;
+    margin-top: 3px;
+}
+.hs-swap dd:first {
+    float: left;
+}
+.app-config-dialog .remote-settings.disabled label {
+    color: #bbb;
+}
+.linkTfs a.tfs_authorize:hover {
+    background: transparent url(//az213233.vo.msecnd.net/Content/Images/icon-next-20-g-hvr.png) no-repeat 0 50%}
+.linkTfs a.tfs_authorize {
+    background: transparent url(//az213233.vo.msecnd.net/Content/Images/icon-next-20-g-idl.png) no-repeat 0 50%;
+    padding: 3px 0 3px 24px;
+    margin-left: 20px;
+    line-height: 28px;
+}
+.linkTfs .linktfsballoonhelp {
+    margin-left: 8px;
+}
+.linkTfs .optionHeader {
+    font-size: 22px!important;
+}
+.linkTfs .noprojerrorimg {
+    padding-right: 4px;
+    float: left;
+}
+.linkTfs #tfsAccnt {
+    width: 100px;
+    padding-left: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+.linkTfs .noProjectMsg {
+    display: none;
+}
+.waz-dialog-input-with-help {
+    float: left;
+    margin-right: 3px;
+}
+.waz-dialog-input-help-balloon {
+    margin-top: 8px;
+}
+.waz-dialog-item-with-help {
+    overflow: hidden;
+}
+.hs-environment {
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+.appDashboard-monitoring {
+    position: relative;
+}
+.roleScaleContainer {
+    width: 100%;
+    height: 100%}
+.scale-control {
+    margin-bottom: 30px;
+}
+.app-config.config-container {
+    width: 90%}
+.app-config.config-container .slider {
+    width: 500px;
+}
+.pending-operation {
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    font-size: 1.3em;
+    color: #939393;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: none;
+}
+.pending-operation .pending-operation-icon {
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+.pending-operation .pending-operation-msg {
+    line-height: 24px;
+}
+.config-container .slider {
+    width: 350px;
+}
+.linkedRes-label {
+    display: none;
+}
+#hs-environment-switcher {
+    display: block;
+}
+#hs-environment-switcher .deploySlot-radio ul {
+    list-style: none;
+}
+#hs-environment-switcher .deploySlot-radio li.last {
+    margin-right: 1px;
+}
+#hs-environment-switcher .deploySlot-radio li {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #bbb;
+    cursor: pointer;
+}
+#hs-environment-switcher .deploySlot-radio li[aria-checked=true] {
+    color: #434343;
+}
+#hs-environment-switcher .deploySlot-radio li input {
+    display: none;
+}
+.hs-empty .deploymentSlot {
+    text-transform: lowercase;
+}
+.hs-empty h1 {
+    font-size: 12px;
+    font-family: "Segoe UI Semibold";
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.hs-empty .hs-empty-header {
+    font-family: "Segoe UI Light";
+    font-size: 28px;
+    color: #737373;
+    margin-bottom: 20px;
+}
+.hs-empty .hs-empty-header p {
+    margin: 10px 0 15px 0;
+}
+.hs-empty .hs-empty-sections {
+    width: 750px;
+}
+.hs-empty .hs-empty-sections .hs-empty-section {
+    border-top: 2px solid #88b9e3;
+    width: 360px;
+    float: left;
+}
+.hs-empty .hs-empty-sections .hs-empty-listview {
+    float: left;
+    width: auto;
+}
+.hs-empty .hs-empty-sections .hs-empty-section:first-child {
+    margin-right: 30px;
+    border-color: #97c83f;
+}
+.hs-empty .hs-empty-sections .hs-empty-section p {
+    font-size: 14px;
+    color: #434343;
+    margin-bottom: 20px;
+}
+.hs-empty .hs-empty-sections .hs-empty-section h3 {
+    color: #4e4e4e;
+    font-family: "Segoe UI Light", Verdana, Helvetica, Sans-Serif;
+    font-size: 20px;
+    margin: 9px 0 13px;
+}
+.hs-empty .arrowlink {
+    background: transparent url(//az213233.vo.msecnd.net/Content/Images/icon-next-20-g-idl.png) no-repeat scroll left 50%;
+    color: #929397;
+    font-family: "Segoe UI Semibold";
+    list-style-type: none;
+    padding: 4px 0 3px 24px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.hs-empty .arrowlink:hover {
+    background: transparent url(//az213233.vo.msecnd.net/Content/Images/icon-next-20-g-hvr.png) no-repeat left 50%;
+    text-decoration: none;
+    color: #509ed8;
+}
+.hs-empty .arrowlink-right {
+    background: transparent url(//az213233.vo.msecnd.net/Content/Images/icon-next-20-g-idl.png) no-repeat right 50%;
+    color: #929397;
+    font-family: "Segoe UI Semibold";
+    list-style-type: none;
+    padding: 4px 30px 3px 0;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.hs-empty .arrowlink-right:hover {
+    background: transparent url(//az213233.vo.msecnd.net/Content/Images/icon-next-20-g-hvr.png) no-repeat right 50%;
+    text-decoration: none;
+    color: #509ed8;
+}
+.mediasvc {
+}
+.mediasvc-managekeys {
+}
+.mediasvc .quickstart-graphic {
+    top: 0;
+    left: 4px;
+}
+.mediasvc .quickstartCheckboxContainer .quickstartCheckboxText {
+    padding-left: 4px;
+}
+.mediasvc .appDashboard-usageContent {
+    font-size: 16px;
+}
+.mediasvc-managekeys p.aux-dialogSubHeader {
+    margin-bottom: 20px!important;
+}
+.mediasvc-managekeys input[type="text"].mediasvc-managekeys-currentkeycontainer {
+    width: 360px;
+    font-family: monospace;
+    border: 1px dashed #a6a6a6;
+    background-color: #f1f1f1;
+}
+.mediasvc-managekeys button.mediasvc-managekeys-synckeybutton {
+    background-color: #8ab646;
+    height: 40px;
+    width: 200px;
+    display: block;
+}
+.mediasvc-managekeys button.mediasvc-managekeys-synckeybutton[disabled] {
+    background-color: #a7b590;
+}
+.ignore {
+}
+.vmDashboard-usageAndDisks {
+    float: left;
+}
+.vm-columns {
+    width: 25em;
+}
+.vm-columns select {
+    width: 100%}
+.vm-columns input {
+    width: 131px;
+}
+.vm-password-container, .vm-location-container {
+    float: left;
+    width: 49%}
+.vm-confirmpassword-container, .vm-subscription-container {
+    float: right;
+    width: 49%}
+.vmDashboard-propertySheet {
+    float: right;
+    margin-top: 0;
+    padding-bottom: 80px;
+}
+.vmDashboard-overview h2 {
+    margin: 40px 0 30px 0;
+    font-size: 20px;
+    color: #444;
+    letter-spacing: -.5px;
+    text-transform: lowercase;
+}
+#vm-configVirtualNetworkSubnets, #vm-virtualNetworkSubnets {
+    height: 200px;
+    width: 300px;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+}
+#vm-virtualNetworkSubnets ul {
+    list-style-type: none;
+    text-transform: uppercase;
+}
+.vm-customcreate-step {
+    width: 740px;
+    height: 465px;
+    overflow: hidden;
+}
+.vm-customcreate-step input[type="radio"] {
+    margin: 0 5px 0 1px;
+}
+.vm-customcreate-form {
+    width: 469px;
+    height: 465px;
+    float: left;
+    border-right: 1px solid #cdcdcd;
+}
+.vm-customcreate-media-details {
+    padding-left: 15px;
+    width: 255px;
+    height: 465px;
+    float: right;
+}
+#vm-endpointGroups {
+    display: block;
+    margin-left: 21px;
+}
+.vm-readonly-item {
+    font-size: 13px;
+    color: #434343;
+    background-color: #f3f3f3;
+    font-family: Consolas, "Monaco";
+    margin-bottom: 8px;
+    padding: 5px 5px 6px;
+    width: 288px;
+}
+.vm-config-container input[type="checkbox"] {
+    width: auto;
+    padding: 5px 5px 5px 0;
+}
+.vm-config-container ul {
+    list-style-type: none;
+    text-transform: uppercase;
+}
+#vm-virtualMachines ul {
+    margin-left: 5px;
+    list-style-image: url(//az213233.vo.msecnd.net/Content/Images/virtualmachine_32.png);
+    padding-left: 30px;
+    display: block;
+    vertical-align: middle;
+}
+.wa-gallery {
+    width: 800px;
+    height: 465px;
+    margin-left: -30px;
+    overflow: hidden;
+}
+.wa-gallery-hidden {
+    display: none;
+}
+.wa-gallery-busy-indicator {
+    width: 660px;
+    height: 450px;
+    float: right;
+    background: url(//az213233.vo.msecnd.net/Content/Images/spinner-md.gif) no-repeat center center;
+}
+.wa-gallery-categories {
+    width: 199px;
+    height: 100%;
+    float: left;
+    border-right: 1px solid #cdcdcd;
+    text-transform: uppercase;
+}
+.wa-gallery-categories-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.wa-gallery-categories-list li {
+    font-family: "Segoe UI Semibold";
+    font-size: 12px;
+    line-height: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.wa-gallery-categories-list li:hover {
+    color: #4f9dd7;
+}
+.wa-gallery-categories-list li.wa-gallery-categories-selected {
+    padding-left: 25px;
+    border-left: 5px solid #4f9dd7;
+    color: #4f9dd7;
+}
+.wa-gallery-no-item-info {
+    text-align: center;
+    margin-top: 200px;
+    font-style: italic;
+    font-size: large;
+}
+.wa-gallery-items-container {
+    width: 600px;
+    height: 100%;
+    float: left;
+}
+.wa-gallery-items-sort-header {
+    overflow: hidden;
+}
+.wa-gallery-items-scrollable {
+    height: 438px;
+    padding: 0;
+    margin: 0;
+}
+.wa-gallery-items-list-container {
+    width: 299px;
+    height: 100%;
+    float: left;
+    padding: 0;
+    border-right: 1px solid #cdcdcd;
+}
+.wa-gallery-items-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.wa-gallery-items-list li {
+    font-size: 14px;
+    border-left: 5px solid transparent;
+    padding: 6px 0 6px 20px;
+    cursor: pointer;
+}
+.wa-gallery-items-list li:hover {
+    background-color: #e6e6e6;
+}
+.wa-gallery-items-list li div img {
+    vertical-align: middle;
+    padding-right: 8px;
+    width: 30px;
+    float: left;
+    display: block;
+}
+.wa-gallery-items-list li div span {
+    display: block;
+    vertical-align: middle;
+    line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.wa-gallery-items-list .wa-gallery-items-selected {
+    background-color: #ececec;
+    border-left: 5px solid #4f9dd7;
+}
+.wa-gallery-item-details {
+    width: 255px;
+    height: 465px;
+    float: right;
+    padding-left: 15px;
+    padding-right: 30px;
+}
+.wa-gallery-item-details-header {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.wa-gallery-item-details-header img {
+    width: 60px;
+    vertical-align: middle;
+    float: left;
+    display: block;
+    margin-right: 8px;
+}
+.wa-gallery-item-details-header span {
+    display: block;
+    line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+    font-size: 18px;
+}
+.wa-gallery-item-details p {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.wa-gallery-item-details-properties div {
+    margin-left: 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.wa-gallery-item-details-header-property-name {
+    width: 80px;
+    vertical-align: top;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: "Segoe UI Semibold";
+    font-size: 11px;
+}
+.wa-gallery-item-details-header-property-value {
+    width: 140px;
+    vertical-align: top;
+    display: inline-block;
+}
+.waz-dialog-input-with-help {
+    float: left;
+    margin-right: 3px;
+}
+.waz-dialog-input-help-balloon {
+    margin-top: 8px;
+}
+.waz-dialog-label-help-balloon {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.waz-dialog-combo-help-balloon {
+    margin-top: 12px;
+}
+.waz-dialog-item-with-help {
+    overflow: hidden;
+}
+.vm-customcreate-submit-content {
+    height: 85%}
+.vm-license-container {
+    height: 15%;
+    overflow: auto;
+    margin-right: 5px;
+}
+vm-connection-help {
+    margin-bottom: 5px;
+}
+div.vm-filepicker {
+    position: relative;
+    width: 320px;
+    height: 30px;
+    margin-bottom: 20px;
+    font: 0;
+    cursor: pointer;
+}
+.vm-filepicker-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border: #999 solid 1px;
+    background: #fff url(//az213233.vo.msecnd.net/Content/Images/fx.fileupload.icon.png) no-repeat 7px 8px;
+}
+.fx-dialog-template input[type="text"].vm-filepicker-input {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 279px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-left: 0;
+    cursor: pointer;
+}
+.vm-filepicker:hover .vm-filepicker-icon {
+    border-color: #48acf6;
+    background-position: -27px 8px;
+}
+.fx-dialog-template .vm-filepicker:hover input[type="text"].vm-filepicker-input {
+    border-color: #48acf6;
+}
+#vm-loadBalanced.fx-readonlyitem {
+    min-height: 18px;
+    padding: 6px 8px;
+    font: 13px/18px Consolas, Monaco;
+}
+.app-config .sectionTitle {
+    border-bottom: 1px solid #88b9e3;
+    margin: 4px;
+    padding: 13px;
+}
+.app-config .sectionTitle>h3 {
+    color: #7f7f7f;
+    font-size: 21px;
+    line-height: 19px;
+    text-transform: lowercase;
+    white-space: nowrap;
+}
+.storageConfigSection .content {
+    float: left;
+}
+.storageConfigSection .content input {
+    vertical-align: bottom;
+    width: 24px;
+}
+.storageConfigSection .content label {
+    margin-right: 3px;
+}
+.storageConfigSection .content span {
+    color: gray;
+    margin-left: 4px;
+}
+.storageConfigSection>h4 {
+    float: left;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 150px;
+}
+.storageLoggingConfigItem {
+    margin: 0 0 .5em -.5em;
+}
+.storageLoggingConfigSection .content div :not(:first-child) {
+    margin-top: .5em;
+}
+.storageLoggingConfigSection>label {
+    padding-top: 0!important;
+}
+.storageKeysViewer {
+    min-height: 210px;
+}
+.storage-small-header {
+    width: 100px;
+}
+.appDashboard-services h2 {
+    margin: 40px 0 30px 0;
+    font-size: 20px;
+    color: #444;
+    letter-spacing: -.5px;
+    text-transform: lowercase;
+}
+.table.aux-propertyinfo {
+    min-width: 300px;
+}
+table.aux-propertyinfo td {
+    color: #434343;
+    font-family: "Segoe UI";
+    font-size: 12px;
+}
+table.aux-propertyinfo th {
+    text-align: left;
+    text-transform: uppercase;
+    border-bottom: 2px solid #000;
+}
+.nwk-dashboard h2 {
+    font-size: 20px;
+    text-transform: lowercase;
+}
+.nwk-dashboard-status {
+    padding-bottom: 30px;
+    margin-top: 30px;
+    width: 100%}
+.nwk-dashboard-status-property {
+    display: inline;
+    float: left;
+    margin-right: 43px;
+    min-width: 150px;
+}
+.nwk-dashboard-status-property label {
+    color: #525252;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    font-family: "Segoe UI Semibold"}
+.nwk-dashboard-status-property-unit {
+    font-size: 36px;
+    font-family: "Segoe UI Light", "Helvetica Neue Light", Garuda, Arial, sans-serif;
+}
+.nwk-dashboard-status-property-value {
+    font-size: 36px;
+    font-family: "Segoe UI Light", "Helvetica Neue Light", Garuda, Arial, sans-serif;
+    font-weight: bold;
+}
+.nwk-dashboard-status-show {
+    display: inline-block;
+}
+.nwk-dashboard-status-hide {
+    display: none;
+}
+.nwk-dashboard-gatewayStatus {
+    margin-bottom: 15px;
+}
+.nwk-config-property-section {
+    width: 470px;
+}
+.nwk-validation-message {
+    color: red;
+}
+.nwk-wizard-content {
+    height: 275px;
+    width: 860px;
+}
+.nwk-checkbox-container {
+    margin-top: 10px;
+    text-align: left;
+}
+.nwk-checkbox-container label {
+    display: inline-block;
+    margin: 0;
+    text-transform: none;
+    vertical-align: middle;
+}
+.nwk-checkbox-container input[type="checkbox"] {
+    margin-right: 4px;
+    width: auto;
+}
+.nwk-wizard-left-column {
+    float: left;
+    width: 370px;
+    margin-right: 5px;
+}
+.nwk-wizard-right-column {
+    float: right;
+    width: 470px;
+}
+.nwk-wizard-small-description {
+    width: 40em;
+}
+.nwk-property-section {
+    border-top: 3px solid #535353;
+    width: 100%;
+    max-height: 180px;
+    overflow: auto;
+}
+.nwk-property-item {
+    background: #f3f3f3;
+    width: 100%;
+    margin-top: 1px;
+    padding-top: 8px;
+}
+.nwk-property-item:hover {
+    background: #dadada;
+}
+.nwk-property-marker {
+    display: inline-block;
+    height: 24px;
+    width: 5px;
+}
+.nwk-property-marker-selected {
+    background-color: #73aed9;
+}
+.nwk-property-input-default {
+    color: #b6b6b6!important;
+    text-transform: uppercase;
+}
+.nwk-property-bold {
+    font-weight: bold;
+}
+.nwk-property-name {
+    width: 100px;
+    display: inline-block;
+    overflow: hidden;
+}
+.nwk-property-name-input {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 100px!important;
+    margin-left: 10px;
+}
+.nwk-property-address {
+    width: 120px;
+    display: inline-block;
+    overflow: hidden;
+}
+.nwk-property-address-input {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 140px!important;
+    margin-left: 10px;
+}
+.nwk-property-select {
+    width: 320px!important;
+    margin-left: 10px;
+    float: left;
+}
+.nwk-property-hint {
+    width: 180px;
+    white-space: nowrap;
+    display: inline-block;
+}
+.nwk-property-button-delete .aux-icon-img {
+    background-image: url(//az213233.vo.msecnd.net/Content/WindowsAzureControls/images/wazTable-cancel.png);
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    float: right;
+}
+.nwk-property-button-cancel .aux-icon-img {
+    background-image: url(//az213233.vo.msecnd.net/Content/WindowsAzureControls/images/wazTable-cancel.png);
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin: 5px 10px;
+    float: right;
+}
+.nwk-property-button-add .aux-icon-img {
+    background-image: url(//az213233.vo.msecnd.net/Content/WindowsAzureControls/images/wazTable-plus.png);
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin: 5px;
+}
+.nwk-import-file {
+    width: 500px;
+    float: left;
+}
+.nwk-file-validation-pending {
+    height: 16px;
+    width: 16px;
+    float: left;
+    margin: 4px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-image: url(//az213233.vo.msecnd.net/Content/Images/icon-validation-pending.gif);
+    display: none;
+}
+.nwk-import-action {
+    text-transform: uppercase;
+}
+.nwk-import-name {
+    font-weight: bold;
+}
+.nwk-diagram {
+    height: 145px;
+    width: 720px;
+    overflow: hidden;
+}
+.nwk-diagram-break {
+    border-right: 1px dashed #cecece;
+    height: 135px;
+    margin: 0 25px;
+    float: left;
+}
+.nwk-diagram-section {
+    float: left;
+}
+.nwk-diagram-section-show {
+    display: inline;
+}
+.nwk-diagram-section-hide {
+    display: none;
+}
+.nwk-diagram-box {
+    background-color: #f2f2f2;
+    border: 1px solid #c8c8c8;
+    height: 120px;
+    padding-top: 15px;
+    overflow: hidden;
+    position: relative;
+}
+.nwk-diagram-box-label {
+    font-size: 14px;
+    vertical-align: top;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 15px;
+    position: absolute;
+    left: 35px;
+    height: 20px;
+    margin-right: 15px;
+}
+.nwk-diagram-box ul {
+    border-left: 2px solid #cecece;
+    font-family: "Segoe UI", "Helvetica Neue Light", Garuda, Arial, sans-serif;
+    font-size: 12px;
+    list-style-type: none;
+    margin: 5px 15px 0 25px;
+    padding: 0 10px 10px 10px;
+    height: 42px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.nwk-diagram-box-virtual {
+    width: 200px;
+}
+.nwk-diagram-box-notcreated {
+    border-right: 3px solid #c30;
+}
+.nwk-diagram-box-creating {
+    border-right: 3px solid #fc0;
+}
+.nwk-diagram-box-created {
+    border-right: 3px solid #60a5d9;
+}
+.nwk-diagram-box-local {
+    width: 200px;
+    float: right;
+}
+.nwk-diagram-box-connected {
+    border-left: 3px solid #7ea654;
+}
+.nwk-diagram-box-connecting {
+    border: 2px solid #fc0;
+}
+.nwk-diagram-box-disconnected {
+    border: 2px solid #c30;
+}
+.nwk-diagram-box-dns {
+    width: 140px;
+    float: left;
+}
+.nwk-diagram-link-box {
+    float: left;
+    position: relative;
+    width: 114px;
+    margin: 50px 0 50px 0;
+}
+.nwk-diagram-link-left {
+    height: 34px;
+    width: 57px;
+    float: left;
+}
+.nwk-diagram-link-right {
+    height: 34px;
+    width: 57px;
+    float: right;
+}
+.nwk-diagram-link-label {
+    color: #525252;
+    font-family: "Segoe UI";
+    font-size: 10px;
+    text-transform: uppercase;
+    position: absolute;
+    top: -16px;
+}
+.nwk-diagram-link-label-left {
+    left: 5px;
+}
+.nwk-diagram-link-label-right {
+    right: 5px;
+}
+.nwk-diagram-link-icon {
+    position: absolute;
+    top: 0;
+    left: 45px;
+    width: 24px;
+    height: 34px;
+}
+.nwk-diagram-link-icon-connected-virtual {
+    position: absolute;
+    top: 0;
+    width: 24px;
+    height: 17px;
+    background-color: #60a5d9;
+}
+.nwk-diagram-link-icon-connected-local {
+    position: absolute;
+    bottom: 0;
+    width: 24px;
+    height: 17px;
+    background-color: #7ea654;
+}
+.nwk-diagram-link-created {
+    background: #60a5d9;
+}
+.nwk-diagram-link-notcreated {
+    background: #c30;
+}
+.nwk-diagram-link-connected {
+    background: #7ea654;
+}
+.nwk-diagram-link-disconnected {
+    background: #666;
+}
+.nwk-diagram-link-progress {
+    background: #fc0;
+}
+.nwk-box-icon {
+    margin: 0 7px 0 15px;
+    display: inline-block;
+}
+.nwk-icon-virtual {
+    background: transparent url(//az213233.vo.msecnd.net/Content/Network/Diagram/network-icon-sprites.png) no-repeat 0 0;
+    background-position: -178px -6px;
+    height: 19px;
+    width: 30px;
+}
+.nwk-icon-local {
+    background: transparent url(//az213233.vo.msecnd.net/Content/Network/Diagram/network-icon-sprites.png) no-repeat 0 0;
+    background-position: -3px -4px;
+    height: 22px;
+    width: 23px;
+}
+.nwk-icon-dns {
+    background: transparent url(//az213233.vo.msecnd.net/Content/Network/Diagram/network-icon-sprites.png) no-repeat 0 0;
+    background-position: -241px -4px;
+    height: 23px;
+    width: 23px;
+}
+.nwk-status-icon {
+    margin-right: 7px;
+    display: inline-block;
+    vertical-align: text-top;
+}
+.nwk-icon-progress {
+    background: transparent url(//az213233.vo.msecnd.net/Content/Network/Diagram/network-icon-sprites.png) no-repeat 0 0;
+    background-position: -302px -8px;
+    height: 15px;
+    width: 15px;
+}
+.nwk-icon-error {
+    background: transparent url(//az213233.vo.msecnd.net/Content/Network/Diagram/network-icon-sprites.png) no-repeat 0 0;
+    background-position: -124px -6px;
+    height: 17px;
+    width: 19px;
+}
+.nwk-status-box {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}

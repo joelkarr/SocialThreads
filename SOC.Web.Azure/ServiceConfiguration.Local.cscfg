@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="SOC.Web.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="1" osVersion="*" schemaVersion="2012-05.1.7">
+  <Role name="SOC.Web">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=http;AccountName=socialthreads;AccountKey=VJbLtBeJB63NCSd7EfQS6hwK/qa15sDjIAhidoVJEBa7BzfQWw/6/uYHhCvXzJdtjU8RpjxTovLx6jHVbaD/cg==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="stadmin" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEESZBtx+1kWVS/rAsHMGvpMwDQYJKoZIhvcNAQEBBQAEggEAYcnxibL2tPx4DxeBSDPUgeEh2E3HSVWyEongu+EKPhBenl5x7LgdheWx3jXUxxZkFjKXWeV5K6QfK0QUC+RsumhTlFRSkHWmOHygVJSvLn3JoOR4v5/bGrE2wXBAGkB3LWoL5wdQxPZAokVtC+5AyJ5cgiWV3ocmw1ryRWZYF6zGIsNFMrf+B9yzkf0pc3XEbtlG0Za74nrGX1ZNRmK9opsOFY1CIHGYSe8yRVwh0QSeyr8EESZoF3C8ceAQIJyENN6AopmGrfl6VUMvzvGOuDgi0Uxj9lwXFLXHludxerFXDu91MMLL6/c3aiufB1J88nfTZP27iz7KmICBKpN+fTAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECM1H/ebRRGnbgBDXY55E8wBWagff6QL4bGQ5" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2013-08-12T23:59:59.0000000-05:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+      <Setting name="CDNConnectionString" value="DefaultEndpointsProtocol=http;AccountName=socialthreads;AccountKey=VJbLtBeJB63NCSd7EfQS6hwK/qa15sDjIAhidoVJEBa7BzfQWw/6/uYHhCvXzJdtjU8RpjxTovLx6jHVbaD/cg==" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="CE6CB6736E748989F87F77A5107306738EEA7F48" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

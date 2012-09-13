@@ -1,0 +1,52 @@
+﻿@model SOC.Web.Models.ViewModels.Base.BaseViewModel
+@{
+	ViewBag.Title = "Log On";
+}
+
+@section StyleSection
+{
+    <link rel="stylesheet" href="@(Model.URLs.CDN)/styles/auth/openid.css" />
+}
+
+@section ScriptSection
+{
+    <script type="text/javascript" src="@(Model.URLs.CDN)/scripts/auth/openid-jquery.js"></script>
+	<script type="text/javascript">
+	    $(document).ready(function () {
+	        openid.init('openid_identifier');
+	    });
+	</script>
+}
+
+
+<form action="@Url.Action("OpenId", "Auth")" method="post" id="openid_form">
+<input type="hidden" name="action" value="verify" />
+<fieldset>
+    <legend>Sign-in or Create New Account</legend>
+    
+    @Html.ValidationSummary()
+
+    <div id="primary_buttons">
+        <a href="@(Model.URLs.CDN)/images/auth/facebook" alt="facebook"><img alt="facebook" src="@(Model.URLs.CDN)/images/auth/facebook_64.png" /></a>
+        <a href="@(Model.URLs.CDN)/images/auth/twitter" alt="twitter"><img alt="twitter" src="@(Model.URLs.CDN)/images/auth/twitter_64.png" /></a>
+        <a href="@(Model.URLs.CDN)/images/auth/yahoo" alt="yahoo"><img alt="yahoo" src="@(Model.URLs.CDN)/images/auth/yahoo_64.png" /></a>
+        <a href="@(Model.URLs.CDN)/images/auth/google" alt="google"><img alt="google" src="@(Model.URLs.CDN)/images/auth/google_apps_64.png" /></a>
+        <a class="oid aol" data-url="http://openid.aol.com/{username}/" data-label="Enter your AOL screenname." alt="aol" href="#"><img alt="aol" src="@(Model.URLs.CDN)/images/auth/aol_64.png" /></a>
+        <a class="oid openid" data-url="" data-label="Enter your OpenID." alt="openid" href="#"><img alt="aol" src="@(Model.URLs.CDN)/images/auth/flickr_32.png" /></a>
+         <a class="oid Technorati" data-url="http://technorati.com/people/technorati/{username}/" data-label="Enter your Technorati username." alt="oid" href="#"><img alt="" src="@(Model.URLs.CDN)/images/auth/technorati_32.png" /></a>
+         <a class="oid Wordpress" data-url="http://{username}.wordpress.com/" data-label="Enter your Wordpress.com username." alt="oid" href="#"><img alt="" src="@(Model.URLs.CDN)/images/auth/wordpress_32.png" /></a>
+         <a class="oid Blogger" data-url="http://{username}.blogspot.com/" data-label="http://{username}.blogspot.com/" alt="oid" href="#"><img alt="" src="@(Model.URLs.CDN)/images/auth/blogger_32.png" /></a>
+    </div>
+    
+    <div id="openid_input_area">
+
+    </div>
+           <input type="hidden" id="openid_identifier" name="openid_identifier" />
+    <noscript>
+        <p>
+            OpenID is service that allows you to log-on to many different websites using a single
+            indentity. Find out <a href="http://openid.net/what/">more about OpenID</a> and
+            <a href="http://openid.net/get/">how to get an OpenID enabled account</a>.</p>
+    </noscript>
+</fieldset>
+</form>

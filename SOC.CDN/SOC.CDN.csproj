@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9A76D413-4DD2-4BBC-AD10-586A1BB1D4DB}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SOC.CDN</RootNamespace>
+    <AssemblyName>SOC.CDN</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsAzure.Configuration, Version=1.7.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.WindowsAzure.StorageClient, Version=1.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="themes\Default\Styles\blue.less" />
+    <None Include="themes\Default\Styles\blue_light.less" />
+    <None Include="themes\Default\Styles\green.less" />
+    <None Include="themes\Default\Styles\layout.less" />
+    <None Include="themes\Default\Styles\light.less" />
+    <None Include="themes\Default\Styles\red.less" />
+    <None Include="themes\Default\Styles\style.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\styles\site.css" />
+    <Content Include="base\images\socialthreads.png" />
+    <Content Include="External\Scripts\dd_belatedpng.js" />
+    <Content Include="External\Scripts\jquery.countdown.min.js" />
+    <Content Include="External\Scripts\jquery.slidertron-1.1.js" />
+    <Content Include="External\Scripts\jquery.tweet.js" />
+    <Content Include="External\Scripts\kinetic-image-plugin-v1.0.1.js" />
+    <Content Include="External\Scripts\kinetic-v3.8.3.min.js" />
+    <Content Include="External\Scripts\modernizr-1.7.min.js" />
+    <Content Include="External\Scripts\openid-jquery.js" />
+    <Content Include="External\Scripts\paper.js" />
+    <Content Include="External\Styles\jquery-ui.css" />
+    <Content Include="External\Styles\jquery.ui.accordion.css" />
+    <Content Include="External\Styles\jquery.ui.all.css" />
+    <Content Include="External\Styles\jquery.ui.autocomplete.css" />
+    <Content Include="External\Styles\jquery.ui.base.css" />
+    <Content Include="External\Styles\jquery.ui.button.css" />
+    <Content Include="External\Styles\jquery.ui.core.css" />
+    <Content Include="External\Styles\jquery.ui.datepicker.css" />
+    <Content Include="External\Styles\jquery.ui.dialog.css" />
+    <Content Include="External\Styles\jquery.ui.progressbar.css" />
+    <Content Include="External\Styles\jquery.ui.resizable.css" />
+    <Content Include="External\Styles\jquery.ui.selectable.css" />
+    <Content Include="External\Styles\jquery.ui.slider.css" />
+    <Content Include="External\Styles\jquery.ui.tabs.css" />
+    <Content Include="External\Styles\jquery.ui.theme.css" />
+    <Content Include="themes\Classic\Images\bg_04.png" />
+    <Content Include="themes\Classic\Images\footer-shadow-bg.png" />
+    <Content Include="themes\Classic\Images\header-wrapper-bg.jpg" />
+    <Content Include="themes\Classic\Images\heading-title-bg.png" />
+    <Content Include="themes\Classic\Images\heading-title-bg_ie6.png" />
+    <Content Include="themes\Classic\Images\icon-list-bg.png" />
+    <Content Include="themes\Classic\Images\image-bg.png" />
+    <Content Include="themes\Classic\Images\page-bottom-bg.png" />
+    <Content Include="themes\Classic\Images\page-bottom-bg_ie6.png" />
+    <Content Include="themes\Classic\Images\page-content-bg.png" />
+    <Content Include="themes\Classic\Images\page-content-bg_ie6.png" />
+    <Content Include="themes\Classic\Images\page-content-top-bg.png" />
+    <Content Include="themes\Classic\Images\page-content-top-bg_ie6.png" />
+    <Content Include="themes\Classic\Images\page-to-shadow-bg.png" />
+    <Content Include="themes\Classic\Images\page-wrapper-bg.png" />
+    <Content Include="themes\Classic\Images\pics-border-bg.png" />
+    <Content Include="themes\Classic\Images\pics-border-bg_ie6.png" />
+    <Content Include="themes\Classic\Images\pics01.jpg" />
+    <Content Include="themes\Classic\Images\slide01.jpg" />
+    <Content Include="themes\Classic\Images\slide02.jpg" />
+    <Content Include="themes\Classic\Images\slide03.jpg" />
+    <Content Include="themes\Classic\Images\slider-shadow-bg.png" />
+    <Content Include="themes\Classic\Images\spacer.gif" />
+    <Content Include="themes\Classic\Images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="themes\Classic\Images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="themes\Classic\Images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="themes\Classic\Images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="themes\Classic\Images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="themes\Classic\Images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="themes\Classic\Images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="themes\Classic\Images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="themes\Classic\Images\ui-icons_222222_256x240.png" />
+    <Content Include="themes\Classic\Images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="themes\Classic\Images\ui-icons_454545_256x240.png" />
+    <Content Include="themes\Classic\Images\ui-icons_888888_256x240.png" />
+    <Content Include="themes\Classic\Images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="themes\Classic\Images\welcome-bg.png" />
+    <Content Include="themes\Classic\Images\welcome-bg_ie6.png" />
+    <Content Include="themes\Classic\Images\wrapper-bg.jpg" />
+    <Content Include="themes\Classic\Images\wrapper-bg.png" />
+    <Content Include="themes\Classic\Styles\default.css" />
+    <Content Include="themes\Classic\Styles\default_ie6.css" />
+    <Content Include="themes\Default\Images\ajax-loader.gif" />
+    <Content Include="themes\Default\Images\arrow-superfish-right.png" />
+    <Content Include="themes\Default\Images\arrow-superfish.png" />
+    <Content Include="themes\Default\Images\bg-hatch.png" />
+    <Content Include="themes\Default\Images\blockquote.png" />
+    <Content Include="themes\Default\Images\ico-breadcrumb-home.png" />
+    <Content Include="themes\Default\Images\ico-breadcrumb-sep.png" />
+    <Content Include="themes\Default\Images\ico-cart.png" />
+    <Content Include="themes\Default\Images\ico-comment-reply.png" />
+    <Content Include="themes\Default\Images\ico-cross.png" />
+    <Content Include="themes\Default\Images\ico-email.png" />
+    <Content Include="themes\Default\Images\ico-error-small.png" />
+    <Content Include="themes\Default\Images\ico-features-image.png" />
+    <Content Include="themes\Default\Images\ico-features-video.png" />
+    <Content Include="themes\Default\Images\ico-info-small.png" />
+    <Content Include="themes\Default\Images\ico-next.png" />
+    <Content Include="themes\Default\Images\ico-prev.png" />
+    <Content Include="themes\Default\Images\ico-rss.png" />
+    <Content Include="themes\Default\Images\ico-search.png" />
+    <Content Include="themes\Default\Images\ico-slider-handle.png" />
+    <Content Include="themes\Default\Images\ico-subscribe-social.png" />
+    <Content Include="themes\Default\Images\ico-success-small.png" />
+    <Content Include="themes\Default\Images\ico-tag.png" />
+    <Content Include="themes\Default\Images\ico-tel.png" />
+    <Content Include="themes\Default\Images\icon_cross_small.png" />
+    <Content Include="themes\Default\Images\icon_tick.png" />
+    <Content Include="themes\Default\Images\logo.png" />
+    <Content Include="themes\Default\Images\sprite.png" />
+    <Content Include="themes\Default\Scripts\cart.js" />
+    <Content Include="themes\Default\Scripts\combobox.js" />
+    <Content Include="themes\Default\Scripts\general.js" />
+    <Content Include="themes\Default\Scripts\respond-IE.js" />
+    <Content Include="themes\Default\Scripts\third-party.js" />
+    <Content Include="themes\Default\Styles\blue.css" />
+    <Content Include="themes\Default\Styles\blue_light.css" />
+    <Content Include="themes\Default\Styles\custom.css" />
+    <Content Include="themes\Default\Styles\default.css" />
+    <Content Include="themes\Default\Styles\green.css" />
+    <Content Include="themes\Default\Styles\layout.css" />
+    <Content Include="themes\Default\Styles\light.css" />
+    <Content Include="themes\Default\Styles\red.css" />
+    <Content Include="themes\Default\Styles\style.css" />
+    <Content Include="base\images\Auth\aol_64.png" />
+    <Content Include="base\images\Auth\blogger_32.png" />
+    <Content Include="base\images\Auth\facebook_64.png" />
+    <Content Include="base\images\Auth\flickr_32.png" />
+    <Content Include="base\images\Auth\google_apps_64.png" />
+    <Content Include="base\images\Auth\openid-inputicon.gif" />
+    <Content Include="base\images\Auth\openid.gif" />
+    <Content Include="base\images\Auth\open_id_64.png" />
+    <Content Include="base\images\Auth\technorati_32.png" />
+    <Content Include="base\images\Auth\twitter_64.png" />
+    <Content Include="base\images\Auth\wordpress_32.png" />
+    <Content Include="base\images\Auth\yahoo_64.png" />
+    <Content Include="base\images\ComingSoon\bg_content.png" />
+    <Content Include="base\images\ComingSoon\bg_gradient_down.png" />
+    <Content Include="base\images\ComingSoon\bg_gradient_up.png" />
+    <Content Include="base\images\ComingSoon\bg_header_black.png" />
+    <Content Include="base\images\ComingSoon\bg_header_blue.png" />
+    <Content Include="base\images\ComingSoon\bg_pattern.png" />
+    <Content Include="base\images\ComingSoon\button.png" />
+    <Content Include="base\images\ComingSoon\button_arrow_left.png" />
+    <Content Include="base\images\ComingSoon\button_arrow_right.png" />
+    <Content Include="base\images\ComingSoon\contact_email.png" />
+    <Content Include="base\images\ComingSoon\contact_textarea.png" />
+    <Content Include="base\images\ComingSoon\countdown.png" />
+    <Content Include="base\images\ComingSoon\description.png" />
+    <Content Include="base\images\ComingSoon\description_bottom.png" />
+    <Content Include="base\images\ComingSoon\description_top.png" />
+    <Content Include="base\images\ComingSoon\facebook.png" />
+    <Content Include="base\images\ComingSoon\form_button_black.png" />
+    <Content Include="base\images\ComingSoon\form_button_blue.png" />
+    <Content Include="base\images\ComingSoon\linkedin.png" />
+    <Content Include="base\images\ComingSoon\map_placeholder.jpg" />
+    <Content Include="base\images\ComingSoon\progressbar.png" />
+    <Content Include="base\images\ComingSoon\progressbar_fill_black.png" />
+    <Content Include="base\images\ComingSoon\progressbar_fill_blue.png" />
+    <Content Include="base\images\ComingSoon\subscribe.png" />
+    <Content Include="base\images\ComingSoon\twitter.png" />
+    <Content Include="base\scripts\auth\openid-jquery.js" />
+    <Content Include="base\scripts\designer\studio.js" />
+    <Content Include="base\scripts\init.js" />
+    <Content Include="base\scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="base\scripts\jquery-1.4.1.js" />
+    <Content Include="base\scripts\jquery-1.4.1.min.js" />
+    <Content Include="base\scripts\jquery-1.4.4-vsdoc.js" />
+    <Content Include="base\scripts\jquery-1.4.4.js" />
+    <Content Include="base\scripts\jquery-1.4.4.min.js" />
+    <Content Include="base\scripts\jquery-1.5.1.min.js" />
+    <Content Include="base\scripts\jquery-ui-1.8.17.js" />
+    <Content Include="base\scripts\jquery-ui-1.8.17.min.js" />
+    <Content Include="base\scripts\jquery.countdown.min.js" />
+    <Content Include="base\scripts\jquery.slidertron-1.1.js" />
+    <Content Include="base\scripts\jquery.tweet.js" />
+    <Content Include="base\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="base\scripts\jquery.validate.js" />
+    <Content Include="base\scripts\jquery.validate.min.js" />
+    <Content Include="base\scripts\knockout-2.1.0.debug.js" />
+    <Content Include="base\scripts\knockout-2.1.0.js" />
+    <Content Include="base\scripts\knockout.debug.js" />
+    <Content Include="base\scripts\knockout.js" />
+    <Content Include="base\scripts\libs\dd_belatedpng.js" />
+    <Content Include="base\scripts\libs\jquery-1.5.1-vsdoc.js" />
+    <Content Include="base\scripts\libs\jquery-1.5.1.js" />
+    <Content Include="base\scripts\libs\jquery-1.5.1.min.js" />
+    <Content Include="base\scripts\libs\jquery.unobtrusive-ajax.js" />
+    <Content Include="base\scripts\libs\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="base\scripts\libs\jquery.validate-vsdoc.js" />
+    <Content Include="base\scripts\libs\jquery.validate.js" />
+    <Content Include="base\scripts\libs\jquery.validate.min.js" />
+    <Content Include="base\scripts\libs\jquery.validate.unobtrusive.js" />
+    <Content Include="base\scripts\libs\jquery.validate.unobtrusive.min.js" />
+    <Content Include="base\scripts\libs\modernizr-1.7.min.js" />
+    <Content Include="base\scripts\libs\paper.js" />
+    <Content Include="base\scripts\MicrosoftAjax.debug.js" />
+    <Content Include="base\scripts\MicrosoftAjax.js" />
+    <Content Include="base\scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="base\scripts\MicrosoftMvcAjax.js" />
+    <Content Include="base\scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="base\scripts\MicrosoftMvcValidation.js" />
+    <Content Include="base\scripts\modernizr-1.7.min.js" />
+    <Content Include="base\scripts\mylibs\.gitignore" />
+    <Content Include="base\scripts\mylibs\kinetic-image-plugin-v1.0.1.js" />
+    <Content Include="base\scripts\mylibs\kinetic-v3.8.3.min.js" />
+    <Content Include="base\scripts\mylibs\openid-jquery.js" />
+    <Content Include="base\scripts\plugins.js" />
+    <Content Include="base\scripts\script.js" />
+    <Content Include="base\styles\auth\openid.css" />
+    <Content Include="base\styles\comingsoon\black.css" />
+    <Content Include="base\styles\comingsoon\blue.css" />
+    <Content Include="base\styles\comingsoon\reset.css" />
+    <Content Include="base\styles\comingsoon\style.css" />
+    <Content Include="base\styles\comingsoon\style_more_fields.css" />
+    <Content Include="base\styles\jquery-ui.css" />
+    <Content Include="base\styles\jquery.ui.accordion.css" />
+    <Content Include="base\styles\jquery.ui.all.css" />
+    <Content Include="base\styles\jquery.ui.autocomplete.css" />
+    <Content Include="base\styles\jquery.ui.base.css" />
+    <Content Include="base\styles\jquery.ui.button.css" />
+    <Content Include="base\styles\jquery.ui.core.css" />
+    <Content Include="base\styles\jquery.ui.datepicker.css" />
+    <Content Include="base\styles\jquery.ui.dialog.css" />
+    <Content Include="base\styles\jquery.ui.progressbar.css" />
+    <Content Include="base\styles\jquery.ui.resizable.css" />
+    <Content Include="base\styles\jquery.ui.selectable.css" />
+    <Content Include="base\styles\jquery.ui.slider.css" />
+    <Content Include="base\styles\jquery.ui.tabs.css" />
+    <Content Include="base\styles\jquery.ui.theme.css" />
+    <Content Include="base\styles\Site.css" />
+    <Content Include="base\styles\studio\studio.css" />
+    <Content Include="Orders\100\officialShirt.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Admin\Images\" />
+    <Folder Include="Admin\Scripts\" />
+    <Folder Include="base\scripts\comingsoon\" />
+    <Folder Include="themes\Classic\Scripts\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
